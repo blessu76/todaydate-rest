@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="두 장의 엽서">
+  <path fill="#f4c79f" d="M0 0h512v512H0z"/>
+  <rect x="132" y="118" width="252" height="276" rx="26" fill="#204939" transform="rotate(13 258 256)"/>
+  <g transform="rotate(-11 242 254)">
+    <rect x="117" y="114" width="250" height="280" rx="26" fill="#fffcf4"/>
+    <rect x="142" y="140" width="200" height="164" rx="15" fill="#dae9d6"/>
+    <circle cx="279" cy="184" r="26" fill="#f4c79f"/>
+    <path fill="#204939" d="m142 284 59-67 43 45 38-32 60 54v5a15 15 0 0 1-15 15H157a15 15 0 0 1-15-15z"/>
+    <path stroke="#204939" stroke-linecap="round" stroke-width="10" d="M150 332h112m-112 24h71"/>
+  </g>
+</svg>

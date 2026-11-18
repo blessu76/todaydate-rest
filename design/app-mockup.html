@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f7f5ed" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#131e19" media="(prefers-color-scheme: dark)">
+<title>오늘 어때 · 앱 시안</title>
+<style>
+:root {
+  color-scheme: light;
+  --paper: #f7f5ed;
+  --surface: #fffcf4;
+  --ink: #202c25;
+  --muted: #526058;
+  --line: #c9d0bf;
+  --action: #204939;
+  --on-action: #fff;
+  --mint: #dae9d6;
+  --peach: #f4c79f;
+  --art-ink: #204939;
+  --font: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --text-small: .875rem;
+  --text-body: 1rem;
+  --text-title: clamp(1.65rem, 6vw, 2.25rem);
+  --space-1: .25rem;
+  --space-2: .5rem;
+  --space-3: .75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --radius-control: .75rem;
+  --radius-card: 1.25rem;
+  --radius-pill: 999px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --paper: #131e19;
+    --surface: #1d2b24;
+    --ink: #f3f4e8;
+    --muted: #b9c9bc;
+    --line: #53685a;
+    --action: #cae8ce;
+    --on-action: #172c22;
+    --mint: #b8d0bb;
+    --peach: #e5b289;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --paper: #131e19;
+  --surface: #1d2b24;
+  --ink: #f3f4e8;
+  --muted: #b9c9bc;
+  --line: #53685a;
+  --action: #cae8ce;
+  --on-action: #172c22;
+  --mint: #b8d0bb;
+  --peach: #e5b289;
+}
+*, *::before, *::after { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: var(--text-body)/1.6 var(--font); overflow-wrap: anywhere; }
+h1, h2, p { margin: 0; }
+h1, h2 { line-height: 1.2; letter-spacing: -.035em; }
+a { color: inherit; }
+button, select { font: inherit; }
+:focus-visible { outline: 2px solid var(--action); outline-offset: 3px; }
+[hidden] { display: none !important; }
+.button { display: inline-flex; align-items: center; justify-content: center; min-height: 46px; padding: var(--space-2) var(--space-4); border: 1px solid transparent; border-radius: var(--radius-pill); background: var(--action); color: var(--on-action); font-weight: 700; text-align: center; text-decoration: none; cursor: pointer; }
+.secondary { background: var(--surface); color: var(--ink); border-color: var(--line); }
+.muted { color: var(--muted); }
+.eyebrow { color: var(--action); font-size: var(--text-small); font-weight: 750; }
+.art { position: relative; display: grid; place-items: center; isolation: isolate; overflow: hidden; aspect-ratio: 16 / 10; background: var(--mint); border-radius: var(--radius-card) var(--radius-card) 0 0; }
+.art::before { position: absolute; inset: 0; z-index: -1; content: ""; background: repeating-linear-gradient(135deg, transparent 0 5px, #2049390b 5px 6px); }
+.window { position: relative; width: 59%; height: 76%; border: 5px solid var(--art-ink); border-radius: 50% 50% 0 0 / 62% 62% 0 0; overflow: hidden; background: #eff1df; }
+.window::before { position: absolute; inset: 15% 13% auto auto; width: 33%; aspect-ratio: 1; border-radius: 50%; background: var(--peach); content: ""; }
+.window::after { position: absolute; inset: 0; content: ""; background: linear-gradient(90deg, transparent 48.5%, var(--art-ink) 48.5% 51.5%, transparent 51.5%), linear-gradient(transparent 66%, var(--art-ink) 66% 69%, transparent 69%); }
+.sill { position: absolute; bottom: 10%; left: 15%; width: 70%; height: 6%; display: flex; justify-content: space-around; align-items: end; border-bottom: 5px solid var(--art-ink); }
+.cup { position: relative; width: 17%; aspect-ratio: 1.2; border: 2px solid var(--art-ink); border-radius: 12% 12% 45% 45%; background: var(--peach); }
+.cup + .cup { background: var(--mint); }
+.cup::after { position: absolute; inset: 15% -24% auto auto; width: 28%; aspect-ratio: .75; content: ""; border: 2px solid var(--art-ink); border-left: 0; border-radius: 0 100% 100% 0; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-card); min-width: 0; }
+.card-copy { padding: var(--space-4); display: grid; gap: var(--space-2); }
+
+.shell { inline-size: min(100%, 375px); min-block-size: 100vh; min-block-size: 100svh; margin-inline: auto; display: grid; grid-template-rows: auto 1fr auto; background: var(--paper); }
+@media (min-width: 420px) { .shell { border-inline: 1px solid var(--line); } }
+.top { padding: var(--space-4); border-bottom: 1px solid var(--line); }
+.wordmark { font-weight: 850; letter-spacing: -.045em; }
+main { padding: var(--space-5) var(--space-4); min-width: 0; }
+.screen { display: grid; gap: var(--space-4); }
+.screen-head { display: grid; gap: var(--space-2); }
+.screen h1 { font-size: var(--text-title); }
+.card h2 { font-size: 1.2rem; }
+nav { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-1); border-top: 1px solid var(--line); background: var(--surface); padding: var(--space-2) var(--space-3) max(var(--space-2), env(safe-area-inset-bottom)); }
+nav button, .choice { min-width: 0; min-height: 46px; color: var(--ink); cursor: pointer; border: 1px solid transparent; border-radius: var(--radius-control); overflow-wrap: anywhere; }
+nav button { background: transparent; padding: var(--space-2); }
+nav [aria-current="page"] { background: var(--action); color: var(--on-action); font-weight: 700; }
+.choices, .collection { display: grid; gap: var(--space-2); }
+.choice { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: var(--space-2); padding: var(--space-3) var(--space-4); border-color: var(--line); background: var(--surface); text-align: start; }
+.choice:hover { border-color: var(--action); }
+.share { padding: var(--space-3); border: 1px dashed var(--line); border-radius: var(--radius-control); }
+.setting { display: grid; gap: var(--space-2); padding: var(--space-4); }
+.setting label { font-weight: 700; }
+select { width: 100%; min-width: 0; min-height: 46px; padding: var(--space-2); border: 1px solid var(--line); border-radius: var(--radius-control); background: var(--paper); color: var(--ink); }
+</style>
+</head>
+<body>
+<div class="shell">
+  <header class="top"><span class="wordmark">오늘 어때</span></header>
+  <main>
+    <section class="screen" id="home" aria-labelledby="home-title">
+      <div class="screen-head"><p class="eyebrow">오늘의 장면</p><h1 id="home-title" tabindex="-1">비가 그친 창가</h1><p class="muted">소나기가 멎고, 컵 두 개가 놓인 테이블에 햇빛이 들어와요.</p></div>
+      <div class="card"><div class="art" aria-hidden="true"><div class="window"></div><div class="sill"><span class="cup"></span><span class="cup"></span></div></div><div class="card-copy"><p>“비가 그쳤네. 이제 뭐 할까?”</p></div></div>
+      <button class="button" type="button" data-go="scene">장면 열기 <span aria-hidden="true">&nbsp;→</span></button>
+    </section>
+
+    <section class="screen" id="scene" aria-labelledby="scene-title" hidden>
+      <div class="screen-head"><p class="eyebrow">비가 그친 창가</p><h1 id="scene-title" tabindex="-1">이제 뭐 할까?</h1><p class="muted">창밖으로 햇빛이 번져요. 맞은편에서 당신의 대답을 기다리고 있어요.</p></div>
+      <div class="choices">
+        <button class="choice" type="button" data-choice="walk">물웅덩이를 피해 골목을 걸어요 <span aria-hidden="true">→</span></button>
+        <button class="choice" type="button" data-choice="tea">차가 식기 전에 한 모금 더 마셔요 <span aria-hidden="true">→</span></button>
+        <button class="choice" type="button" data-choice="photo">창에 비친 햇빛을 사진으로 남겨요 <span aria-hidden="true">→</span></button>
+      </div>
+      <button class="button secondary" type="button" data-go="home">오늘의 장면으로</button>
+    </section>
+
+    <section class="screen" id="result" aria-labelledby="result-title" hidden>
+      <div class="screen-head"><p class="eyebrow" id="result-kind">오늘의 엽서</p><h1 id="result-title" tabindex="-1"></h1></div>
+      <article class="card"><div class="art" aria-hidden="true"><div class="window"></div><div class="sill"><span class="cup"></span><span class="cup"></span></div></div><div class="card-copy"><p id="ending"></p></div></article>
+      <button class="button" type="button" id="share-button" aria-expanded="false" aria-controls="share-preview">공유 문구 보기</button>
+      <div class="share" id="share-preview" hidden><p id="share-text"></p></div>
+      <button class="button secondary" type="button" data-go="collection">컬렉션으로</button>
+    </section>
+
+    <section class="screen" id="collection" aria-labelledby="collection-title" hidden>
+      <div class="screen-head"><h1 id="collection-title" tabindex="-1">컬렉션</h1><p class="muted">마음에 남은 장면을 다시 열어 보세요.</p></div>
+      <div class="collection" id="postcards">
+        <button class="choice" type="button" data-postcard="bookshop">책갈피를 고르는 오후 <span aria-hidden="true">→</span></button>
+      </div>
+    </section>
+
+    <section class="screen" id="settings" aria-labelledby="settings-title" hidden>
+      <h1 id="settings-title" tabindex="-1">설정</h1>
+      <div class="card setting">
+        <label for="language">언어</label>
+        <select id="language" aria-describedby="language-note">
+          <option value="ko" lang="ko">한국어</option>
+          <option value="en" lang="en">English</option>
+          <option value="ja" lang="ja">日本語</option>
+          <option value="zh-Hans" lang="zh-Hans">简体中文</option>
+          <option value="zh-Hant" lang="zh-Hant">繁體中文</option>
+          <option value="es" lang="es">Español</option>
+          <option value="fr" lang="fr">Français</option>
+          <option value="de" lang="de">Deutsch</option>
+          <option value="pt-BR" lang="pt-BR">Português (Brasil)</option>
+          <option value="id" lang="id">Bahasa Indonesia</option>
+          <option value="ar" lang="ar" dir="rtl">العربية</option>
+        </select>
+        <p class="muted" id="language-note">시안 본문은 한국어로 표시됩니다.</p>
+      </div>
+      <div class="card setting">
+        <label for="theme">화면 테마</label>
+        <select id="theme">
+          <option value="system">시스템 설정</option>
+          <option value="light">라이트</option>
+          <option value="dark">다크</option>
+        </select>
+      </div>
+    </section>
+  </main>
+  <nav aria-label="주 메뉴">
+    <button type="button" data-go="home" aria-current="page">홈</button>
+    <button type="button" data-go="collection">컬렉션</button>
+    <button type="button" data-go="settings">설정</button>
+  </nav>
+</div>
+
+<script>
+const endings = {
+  walk: ['비 냄새를 따라', '골목 끝 꽃집 앞에서 둘 다 멈췄어요. 빗방울이 맺힌 잎을 들여다보다가 눈이 마주쳤어요.'],
+  tea: ['차가 식기 전에', '따뜻한 잔을 감싸 쥐고 서로의 주말 이야기를 들었어요. 창가에 있던 햇빛이 어느새 발끝까지 왔어요.'],
+  photo: ['햇빛 한 조각', '사진 속 유리에 두 사람의 그림자가 함께 담겼어요. “이건 나한테도 보내 줘.”'],
+  bookshop: ['책갈피를 고르는 오후', '같은 색 책갈피를 집었어요. 다음에 만나면 어디까지 읽었는지 이야기하기로 했어요.']
+};
+const screens = document.querySelectorAll('.screen');
+const navigation = document.querySelectorAll('nav button');
+const shareButton = document.querySelector('#share-button');
+const sharePreview = document.querySelector('#share-preview');
+const postcards = document.querySelector('#postcards');
+const saved = new Set();
+
+function showScreen(id, activeTab = id) {
+  for (const screen of screens) screen.hidden = screen.id !== id;
+  for (const button of navigation) {
+    if (button.dataset.go === activeTab) button.setAttribute('aria-current', 'page');
+    else button.removeAttribute('aria-current');
+  }
+  document.getElementById(id + '-title').focus();
+}
+
+function setShareOpen(open) {
+  sharePreview.hidden = !open;
+  shareButton.setAttribute('aria-expanded', String(open));
+  shareButton.textContent = open ? '공유 문구 닫기' : '공유 문구 보기';
+}
+
+function openPostcard(key, fromCollection) {
+  const [title, ending] = endings[key];
+  document.querySelector('#result-kind').textContent = fromCollection ? '컬렉션의 엽서' : '오늘의 엽서';
+  document.querySelector('#result-title').textContent = title;
+  document.querySelector('#ending').textContent = ending;
+  document.querySelector('#share-text').textContent = '오늘 어때 · ' + title + ' — ' + ending;
+  setShareOpen(false);
+  showScreen('result', fromCollection ? 'collection' : 'home');
+}
+
+document.addEventListener('click', (event) => {
+  const button = event.target.closest('button');
+  if (!button) return;
+  const { go, choice, postcard } = button.dataset;
+  if (go) showScreen(go, go === 'scene' ? 'home' : go);
+  if (choice) {
+    if (!saved.has(choice)) {
+      const entry = document.createElement('button');
+      entry.type = 'button';
+      entry.className = 'choice';
+      entry.dataset.postcard = choice;
+      entry.textContent = endings[choice][0];
+      postcards.append(entry);
+      saved.add(choice);
+    }
+    openPostcard(choice, false);
+  }
+  if (postcard) openPostcard(postcard, true);
+});
+shareButton.addEventListener('click', () => setShareOpen(sharePreview.hidden));
+document.querySelector('#theme').addEventListener('change', (event) => {
+  document.documentElement.dataset.theme = event.target.value;
+});
+</script>
+</body>
+</html>
