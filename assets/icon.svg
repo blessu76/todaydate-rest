@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="창가와 두 잔">
+  <path fill="#204939" d="M0 0h512v512H0z"/>
+  <path fill="#dae9d6" d="M106 381V223a150 150 0 0 1 300 0v158z"/>
+  <circle cx="313" cy="186" r="50" fill="#f4c79f"/>
+  <path fill="none" stroke="#204939" stroke-width="14" d="M256 73v308M106 271h300"/>
+  <path stroke="#fffcf4" stroke-linecap="round" stroke-width="20" d="M84 392h344"/>
+  <path fill="#204939" d="M155 316h56v29a28 28 0 0 1-56 0zm140 0h56v29a28 28 0 0 1-56 0z"/>
+  <path fill="none" stroke="#204939" stroke-width="8" d="M208 322h9a11 11 0 0 1 0 22h-9m140-22h9a11 11 0 0 1 0 22h-9"/>
+</svg>

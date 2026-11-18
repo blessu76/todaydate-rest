@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="zh-Hant" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>支援與聯絡 · 오늘 어때</title>
+<meta name="description" content="使用中有疑問或遇到問題，請透過以下方式告訴我們。">
+<meta name="theme-color" content="#f7f5ed" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#131e19" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:title" content="支援與聯絡 · 오늘 어때">
+<meta property="og:description" content="使用中有疑問或遇到問題，請透過以下方式告訴我們。">
+<meta property="og:url" content="https://todaydate.ipe.rest/zh-hant/support/">
+<meta property="og:image" content="https://todaydate.ipe.rest/assets/icon-512.png?v=20261119">
+<link rel="canonical" href="https://todaydate.ipe.rest/zh-hant/support/">
+  <link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/support/">
+  <link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/en/support/">
+  <link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/support/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://todaydate.ipe.rest/zh-hans/support/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/support/">
+  <link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/support/">
+  <link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/support/">
+  <link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/support/">
+  <link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/support/">
+  <link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/support/">
+  <link rel="alternate" hreflang="ar" href="https://todaydate.ipe.rest/ar/support/">
+  <link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/en/support/">
+<link rel="icon" href="/assets/icon.svg?v=20261119" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png?v=20261119">
+<link rel="manifest" href="/manifest.webmanifest?v=20261119">
+<link rel="stylesheet" href="/assets/site.css?v=20261119">
+<script>
+try { var s = localStorage.getItem('todaydate-theme'); if (s === 'light' || s === 'dark') document.documentElement.dataset.theme = s; } catch (e) {}
+</script>
+</head>
+<body>
+<header>
+  <div class="wrap bar">
+    <a class="wordmark" href="/zh-hant/">오늘 어때</a>
+    <div class="bar-end">
+      
+      <button type="button" class="button secondary theme-toggle" data-theme-toggle aria-label="切換深色/淺色">主題</button>
+    </div>
+  </div>
+</header>
+<main class="wrap legal" id="top">
+  <a class="back" href="/zh-hant/">← 返回首頁</a>
+  <h1>支援與聯絡</h1>
+  <p class="muted">使用中有疑問或遇到問題，請透過以下方式告訴我們。</p>
+  
+  <section><p>聯絡信箱會在上線前公布在此頁面。您可以先在首頁查看常見問題。</p></section>
+  <section><h2>聯絡方式</h2><p>上線前正在準備聯絡管道。 <!-- [검토 필요] 聯絡信箱確定前的占位 --></p><p><a class="button secondary" href="/zh-hant/#faq">查看常見問題</a></p></section>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="muted">오늘 어때 · ipe Studio</p>
+    <nav aria-label="語言"><ul class="lang-list"><li><a href="/ko/support/" hreflang="ko" lang="ko">한국어</a></li><li><a href="/en/support/" hreflang="en" lang="en">English</a></li><li><a href="/ja/support/" hreflang="ja" lang="ja">日本語</a></li><li><a href="/zh-hans/support/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a></li><li><a href="/zh-hant/support/" hreflang="zh-Hant" lang="zh-Hant" aria-current="page">繁體中文</a></li><li><a href="/es/support/" hreflang="es" lang="es">Español</a></li><li><a href="/fr/support/" hreflang="fr" lang="fr">Français</a></li><li><a href="/de/support/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/pt-br/support/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a></li><li><a href="/id/support/" hreflang="id" lang="id">Bahasa Indonesia</a></li><li><a href="/ar/support/" hreflang="ar" lang="ar" dir="rtl">العربية</a></li></ul></nav>
+    <nav aria-label="支援與聯絡"><ul class="lang-list"><li><a href="/zh-hant/privacy/">隱私權政策</a></li><li><a href="/zh-hant/terms/">服務條款</a></li><li><a href="/zh-hant/support/">支援與聯絡</a></li></ul></nav>
+  </div>
+</footer>
+<script>
+(function () {
+  var b = document.querySelector('[data-theme-toggle]');
+  if (!b) return;
+  b.addEventListener('click', function () {
+    var r = document.documentElement;
+    var cur = r.dataset.theme || (window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    var next = cur === 'dark' ? 'light' : 'dark';
+    r.dataset.theme = next;
+    try { localStorage.setItem('todaydate-theme', next); } catch (e) {}
+  });
+})();
+</script>
+</body>
+</html>
