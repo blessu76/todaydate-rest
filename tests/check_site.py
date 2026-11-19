@@ -7,7 +7,9 @@
 Checks (each failure prints its reason):
   1. every <loc> in sitemap.xml maps to a file inside the tree (…/index.html, or a .html file).
   2. every index.html page (except design/ and dot-dirs) is listed in sitemap.xml.
-  3. every page's hreflang alternates match the language folders (en/ko/…) and include x-default.
+  3. every page's hreflang alternates match the language folders (en/ko/…, as BCP 47 tags:
+     zh-hans -> zh-Hans, zh-hant -> zh-Hant, pt-br -> pt-BR), include x-default, point at their
+     own folder, and <html lang> of a language page equals its tag.
   4. every relative or root-relative internal href/src resolves to a file in the tree.
 
 Pages are index.html files; design/ mockups are not site pages and are skipped.
@@ -26,18 +28,29 @@ SKIP_DIRS = {".git", "design", "node_modules"}
 LANG_RE = re.compile(r"^[a-z]{2}(?:-[A-Za-z0-9]{2,8})?$")
 EXTERNAL_SCHEMES = {"http", "https", "mailto", "tel", "data", "javascript", "sms"}
 SITEMAP_NS = "{http://www.sitemaps.org/schemas/sitemap/0.9}"
+# Folder names are lowercase URL paths; the language tags used in hreflang and
+# <html lang> are BCP 47 (script subtags capitalised, region uppercase).
+BCP47_TAG = {"zh-hans": "zh-Hans", "zh-hant": "zh-Hant", "pt-br": "pt-BR"}
+
+
+def tag_for(folder):
+    """Language folder ('pt-br') -> BCP 47 tag ('pt-BR')."""
+    return BCP47_TAG.get(folder, folder)
 
 
 class _Collect(HTMLParser):
-    """Collects link[rel=alternate][hreflang] and every href/src value."""
+    """Collects link[rel=alternate][hreflang], <html lang> and every href/src value."""
 
     def __init__(self):
         super().__init__(convert_charrefs=True)
         self.alternates = []  # (hreflang, href)
+        self.html_lang = None  # value of <html lang>
         self.refs = []  # href/src values
 
     def handle_starttag(self, tag, attrs):
         a = {k.lower(): (v or "") for k, v in attrs}
+        if tag == "html" and "lang" in a:
+            self.html_lang = a["lang"].strip()
         for key in ("href", "src"):
             if key in a:
                 self.refs.append(a[key].strip())
@@ -115,7 +128,9 @@ def lang_folders(root):
 
 
 def check_hreflang(root, origin, pages, langs, errs):
-    expected = set(langs)
+    # hreflang codes must be the BCP 47 tag of each language folder; each code's
+    # href must point at that folder; <html lang> of a language page must match it too.
+    expected = {tag_for(f): f for f in langs}
     for page in pages:
         parser = _Collect()
         parser.feed((Path(root) / page).read_text(encoding="utf-8"))
@@ -124,15 +139,23 @@ def check_hreflang(root, origin, pages, langs, errs):
         if "x-default" not in codes:
             errs.append("%s: hreflang x-default missing" % page)
         got = set(codes) - {"x-default"}
-        if got != expected:
+        if got != set(expected):
             errs.append("%s: hreflang %s does not match language folders %s"
                         % (page, sorted(got), sorted(expected)))
         for code, href in alts:
             f = url_to_file(href, origin)
             if f is None:
                 errs.append("%s: hreflang %s href not a site URL: %s" % (page, code, href))
-            elif not (Path(root) / f).is_file():
+                continue
+            if code in expected and not f.startswith(expected[code] + "/"):
+                errs.append("%s: hreflang %s points to %s (expected folder %s)"
+                            % (page, code, href, expected[code]))
+            if not (Path(root) / f).is_file():
                 errs.append("%s: hreflang %s -> %s not found" % (page, code, f))
+        folder = Path(page).parts[0] if len(Path(page).parts) > 1 else None
+        if folder in expected and parser.html_lang != tag_for(folder):
+            errs.append("%s: <html lang> %r does not match folder tag %r"
+                        % (page, parser.html_lang, tag_for(folder)))
 
 
 def check_links(root, pages, errs):
