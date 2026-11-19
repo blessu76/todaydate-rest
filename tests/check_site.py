@@ -1,0 +1,196 @@
+#!/usr/bin/env python3
+"""Site consistency check for the static site — stdlib only. Exit 0 = consistent, exit 1 = something is off.
+
+  python3 tests/check_site.py                 # check the repo this file belongs to
+  python3 tests/check_site.py --root <dir>    # check another tree (used for fixtures)
+
+Checks (each failure prints its reason):
+  1. every <loc> in sitemap.xml maps to a file inside the tree (…/index.html, or a .html file).
+  2. every index.html page (except design/ and dot-dirs) is listed in sitemap.xml.
+  3. every page's hreflang alternates match the language folders (en/ko/…) and include x-default.
+  4. every relative or root-relative internal href/src resolves to a file in the tree.
+
+Pages are index.html files; design/ mockups are not site pages and are skipped.
+The site origin is read from CNAME (https://<host>).
+"""
+import argparse
+import re
+import sys
+import xml.etree.ElementTree as ET
+from html.parser import HTMLParser
+from pathlib import Path
+from urllib.parse import unquote, urlsplit
+
+HERE = Path(__file__).resolve().parent
+SKIP_DIRS = {".git", "design", "node_modules"}
+LANG_RE = re.compile(r"^[a-z]{2}(?:-[A-Za-z0-9]{2,8})?$")
+EXTERNAL_SCHEMES = {"http", "https", "mailto", "tel", "data", "javascript", "sms"}
+SITEMAP_NS = "{http://www.sitemaps.org/schemas/sitemap/0.9}"
+
+
+class _Collect(HTMLParser):
+    """Collects link[rel=alternate][hreflang] and every href/src value."""
+
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.alternates = []  # (hreflang, href)
+        self.refs = []  # href/src values
+
+    def handle_starttag(self, tag, attrs):
+        a = {k.lower(): (v or "") for k, v in attrs}
+        for key in ("href", "src"):
+            if key in a:
+                self.refs.append(a[key].strip())
+        if tag == "link" and a.get("rel", "").lower() == "alternate" and "hreflang" in a:
+            self.alternates.append((a["hreflang"].strip(), a.get("href", "").strip()))
+
+
+def site_origin(root):
+    try:
+        host = (Path(root) / "CNAME").read_text(encoding="utf-8").strip()
+    except OSError:
+        host = ""
+    return "https://%s" % host if host else ""
+
+
+def iter_pages(root):
+    """index.html files as POSIX paths relative to root."""
+    out = []
+    for p in sorted(Path(root).rglob("index.html")):
+        rel = p.relative_to(root)
+        if any(part in SKIP_DIRS or part.startswith(".") for part in rel.parts[:-1]):
+            continue
+        out.append(rel.as_posix())
+    return out
+
+
+def url_to_file(url, origin):
+    """'https://host/a/b/' -> 'a/b/index.html'; '/a.html' -> 'a.html'; None if not a site URL."""
+    if url.startswith(("http://", "https://")):
+        if not origin or not url.startswith(origin):
+            return None
+        url = url[len(origin):] or "/"
+    path = unquote(urlsplit(url).path)
+    if not path.startswith("/"):
+        return None
+    path = path.lstrip("/")
+    if path == "" or path.endswith("/"):
+        return path + "index.html"
+    if path.endswith(".html"):
+        return path
+    return path + "/index.html"
+
+
+def check_sitemap(root, origin, pages, errs):
+    sm = Path(root) / "sitemap.xml"
+    if not sm.is_file():
+        errs.append("sitemap.xml: missing")
+        return
+    try:
+        tree = ET.parse(sm)
+    except ET.ParseError as ex:
+        errs.append("sitemap.xml: parse error: %s" % ex)
+        return
+    listed = set()
+    for loc in tree.iter(SITEMAP_NS + "loc"):
+        url = (loc.text or "").strip()
+        f = url_to_file(url, origin)
+        if f is None:
+            errs.append("sitemap.xml: <loc> not on %s: %s" % (origin or "this site", url))
+            continue
+        if not (Path(root) / f).is_file():
+            errs.append("sitemap.xml: <loc> %s -> %s not found in repo" % (url, f))
+        listed.add(f)
+    for page in pages:
+        if page not in listed:
+            errs.append("%s: not listed in sitemap.xml" % page)
+
+
+def lang_folders(root):
+    """Top-level language folders that contain an index.html."""
+    return sorted(
+        p.name for p in Path(root).iterdir()
+        if p.is_dir() and LANG_RE.match(p.name) and (p / "index.html").is_file()
+    )
+
+
+def check_hreflang(root, origin, pages, langs, errs):
+    expected = set(langs)
+    for page in pages:
+        parser = _Collect()
+        parser.feed((Path(root) / page).read_text(encoding="utf-8"))
+        alts = parser.alternates
+        codes = [h for h, _ in alts]
+        if "x-default" not in codes:
+            errs.append("%s: hreflang x-default missing" % page)
+        got = set(codes) - {"x-default"}
+        if got != expected:
+            errs.append("%s: hreflang %s does not match language folders %s"
+                        % (page, sorted(got), sorted(expected)))
+        for code, href in alts:
+            f = url_to_file(href, origin)
+            if f is None:
+                errs.append("%s: hreflang %s href not a site URL: %s" % (page, code, href))
+            elif not (Path(root) / f).is_file():
+                errs.append("%s: hreflang %s -> %s not found" % (page, code, f))
+
+
+def check_links(root, pages, errs):
+    for page in pages:
+        parser = _Collect()
+        parser.feed((Path(root) / page).read_text(encoding="utf-8"))
+        base = Path(page).parent
+        for ref in parser.refs:
+            if not ref or ref.startswith("#"):
+                continue
+            parts = urlsplit(ref)
+            if parts.scheme.lower() in EXTERNAL_SCHEMES or parts.netloc:
+                continue  # external or absolute-host; origin links are covered by hreflang/sitemap checks
+            target = unquote(parts.path)
+            if not target:
+                continue  # query-only or fragment-only
+            if target.startswith("/"):
+                rel = Path(target.lstrip("/"))
+            else:
+                rel = (base / target)
+            rel = Path(*[x for x in rel.parts if x not in ("", ".")]) if rel.parts else Path(".")
+            full = Path(root) / rel
+            if target.endswith("/") or full.is_dir():
+                ok = (full / "index.html").is_file()
+                where = (rel / "index.html").as_posix()
+            else:
+                ok = full.is_file()
+                where = rel.as_posix()
+            if not ok:
+                errs.append("%s: broken link %r -> %s" % (page, ref, where))
+
+
+def run(root):
+    root = Path(root).resolve()
+    origin = site_origin(root)
+    pages = iter_pages(root)
+    errs = []
+    if not origin:
+        errs.append("CNAME: missing or empty (site origin unknown)")
+    check_sitemap(root, origin, pages, errs)
+    check_hreflang(root, origin, pages, lang_folders(root), errs)
+    check_links(root, pages, errs)
+    return errs, pages
+
+
+def main(argv=None):
+    ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
+    ap.add_argument("--root", default=str(HERE.parent), help="site tree to check (default: repo root)")
+    args = ap.parse_args(argv)
+    errs, pages = run(args.root)
+    if errs:
+        print("check_site: FAIL (%d problem%s)" % (len(errs), "" if len(errs) == 1 else "s"))
+        for e in errs:
+            print("  - " + e)
+        return 1
+    print("check_site: OK (%d page%s)" % (len(pages), "" if len(pages) == 1 else "s"))
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
