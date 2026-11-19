@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>404 · 오늘 어때</title>
+<meta name="description" content="Page not found.">
+<link rel="icon" href="/assets/icon.svg?v=20261119" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png?v=20261119">
+<link rel="stylesheet" href="/assets/site.css?v=20261119">
+<script>
+try { var s = localStorage.getItem('todaydate-theme'); if (s === 'light' || s === 'dark') document.documentElement.dataset.theme = s; } catch (e) {}
+</script>
+</head>
+<body>
+<header>
+  <div class="wrap bar">
+    <a class="wordmark" href="/">오늘 어때</a>
+    <div class="bar-end"><button type="button" class="button secondary theme-toggle" data-theme-toggle aria-label="Switch dark/light">Theme</button></div>
+  </div>
+</header>
+<main class="wrap not-found">
+  <h1>404 · Page not found</h1>
+  <p class="muted">This address has changed or does not exist. Start again from the home page.</p>
+  <p><a class="button" href="/en/">Home</a></p>
+  <p lang="ko" class="muted">주소가 바뀌었거나 없는 페이지예요. 홈에서 다시 시작해 주세요.</p>
+  <p><a class="button secondary" href="/ko/">홈으로</a></p>
+</main>
+<script>
+(function () {
+  var b = document.querySelector('[data-theme-toggle]');
+  if (!b) return;
+  b.addEventListener('click', function () {
+    var r = document.documentElement;
+    var cur = r.dataset.theme || (window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    var next = cur === 'dark' ? 'light' : 'dark';
+    r.dataset.theme = next;
+    try { localStorage.setItem('todaydate-theme', next); } catch (e) {}
+  });
+})();
+</script>
+</body>
+</html>
