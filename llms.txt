@@ -1,6 +1,6 @@
 # 오늘 어때 (todaydate)
 
-> A daily date-scene game: pick the next moment and keep the stories as postcards. No ads, no in-app purchases, no account required. 11 languages.
+> A daily date-scene game: pick the next moment and keep the stories as postcards. No ads and no account required. The core game is free; scene packs and decorations are optional, unlocked with points bought in the app. 11 languages.
 
 ## Pages
 - [한국어](https://todaydate.ipe.rest/ko/): 오늘의 데이트 장면에서 다음 순간을 고르고, 마음에 남은 이야기를 엽서로 모으세요.
