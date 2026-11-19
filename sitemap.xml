@@ -3,721 +3,834 @@
   <url>
     <loc>https://todaydate.ipe.rest/</loc>
     <lastmod>2026-11-19</lastmod>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/en/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://todaydate.ipe.rest/zh-hans/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/"/>
     <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://todaydate.ipe.rest/ar/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://todaydate.ipe.rest/th/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://todaydate.ipe.rest/vi/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/"/>
-  </url>
-  <url>
-    <loc>https://todaydate.ipe.rest/ko/</loc>
-    <lastmod>2026-11-19</lastmod>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/en/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://todaydate.ipe.rest/zh-hans/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/"/>
-    <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://todaydate.ipe.rest/ar/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/"/>
-  </url>
-  <url>
-    <loc>https://todaydate.ipe.rest/ko/privacy/</loc>
-    <lastmod>2026-11-19</lastmod>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/en/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://todaydate.ipe.rest/zh-hans/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://todaydate.ipe.rest/ar/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/en/privacy/"/>
-  </url>
-  <url>
-    <loc>https://todaydate.ipe.rest/ko/terms/</loc>
-    <lastmod>2026-11-19</lastmod>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/terms/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/en/terms/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/terms/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://todaydate.ipe.rest/zh-hans/terms/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/terms/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/terms/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/terms/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/terms/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/terms/"/>
-    <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/terms/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://todaydate.ipe.rest/ar/terms/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/en/terms/"/>
-  </url>
-  <url>
-    <loc>https://todaydate.ipe.rest/ko/support/</loc>
-    <lastmod>2026-11-19</lastmod>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/support/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/en/support/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/support/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://todaydate.ipe.rest/zh-hans/support/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/support/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/support/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/support/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/support/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/support/"/>
-    <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/support/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://todaydate.ipe.rest/ar/support/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/en/support/"/>
   </url>
   <url>
     <loc>https://todaydate.ipe.rest/en/</loc>
     <lastmod>2026-11-19</lastmod>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/en/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://todaydate.ipe.rest/zh-hans/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/"/>
     <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://todaydate.ipe.rest/ar/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://todaydate.ipe.rest/th/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://todaydate.ipe.rest/vi/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/"/>
   </url>
   <url>
     <loc>https://todaydate.ipe.rest/en/privacy/</loc>
     <lastmod>2026-11-19</lastmod>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/privacy/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/privacy/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://todaydate.ipe.rest/zh-hans/privacy/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/privacy/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/privacy/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/privacy/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/privacy/"/>
     <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://todaydate.ipe.rest/ar/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://todaydate.ipe.rest/th/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://todaydate.ipe.rest/vi/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/privacy/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/en/privacy/"/>
   </url>
   <url>
     <loc>https://todaydate.ipe.rest/en/terms/</loc>
     <lastmod>2026-11-19</lastmod>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/terms/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/en/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/terms/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/terms/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://todaydate.ipe.rest/zh-hans/terms/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/terms/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/terms/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/terms/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/terms/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/terms/"/>
     <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/terms/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://todaydate.ipe.rest/ar/terms/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://todaydate.ipe.rest/th/terms/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://todaydate.ipe.rest/vi/terms/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/terms/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/en/terms/"/>
   </url>
   <url>
     <loc>https://todaydate.ipe.rest/en/support/</loc>
     <lastmod>2026-11-19</lastmod>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/support/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/en/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/support/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/support/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://todaydate.ipe.rest/zh-hans/support/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/support/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/support/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/support/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/support/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/support/"/>
     <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/support/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://todaydate.ipe.rest/ar/support/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://todaydate.ipe.rest/th/support/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://todaydate.ipe.rest/vi/support/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/en/support/"/>
+  </url>
+  <url>
+    <loc>https://todaydate.ipe.rest/ko/</loc>
+    <lastmod>2026-11-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/en/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://todaydate.ipe.rest/th/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://todaydate.ipe.rest/vi/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/"/>
+  </url>
+  <url>
+    <loc>https://todaydate.ipe.rest/ko/privacy/</loc>
+    <lastmod>2026-11-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://todaydate.ipe.rest/th/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://todaydate.ipe.rest/vi/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/en/privacy/"/>
+  </url>
+  <url>
+    <loc>https://todaydate.ipe.rest/ko/terms/</loc>
+    <lastmod>2026-11-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/en/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/terms/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/terms/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/terms/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://todaydate.ipe.rest/th/terms/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://todaydate.ipe.rest/vi/terms/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/en/terms/"/>
+  </url>
+  <url>
+    <loc>https://todaydate.ipe.rest/ko/support/</loc>
+    <lastmod>2026-11-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/en/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/support/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://todaydate.ipe.rest/th/support/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://todaydate.ipe.rest/vi/support/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/support/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/en/support/"/>
   </url>
   <url>
     <loc>https://todaydate.ipe.rest/ja/</loc>
     <lastmod>2026-11-19</lastmod>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/en/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://todaydate.ipe.rest/zh-hans/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/"/>
     <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://todaydate.ipe.rest/ar/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://todaydate.ipe.rest/th/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://todaydate.ipe.rest/vi/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/"/>
   </url>
   <url>
     <loc>https://todaydate.ipe.rest/ja/privacy/</loc>
     <lastmod>2026-11-19</lastmod>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/privacy/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/privacy/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://todaydate.ipe.rest/zh-hans/privacy/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/privacy/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/privacy/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/privacy/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/privacy/"/>
     <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://todaydate.ipe.rest/ar/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://todaydate.ipe.rest/th/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://todaydate.ipe.rest/vi/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/privacy/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/en/privacy/"/>
   </url>
   <url>
     <loc>https://todaydate.ipe.rest/ja/terms/</loc>
     <lastmod>2026-11-19</lastmod>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/terms/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/en/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/terms/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/terms/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://todaydate.ipe.rest/zh-hans/terms/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/terms/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/terms/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/terms/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/terms/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/terms/"/>
     <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/terms/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://todaydate.ipe.rest/ar/terms/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://todaydate.ipe.rest/th/terms/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://todaydate.ipe.rest/vi/terms/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/terms/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/en/terms/"/>
   </url>
   <url>
     <loc>https://todaydate.ipe.rest/ja/support/</loc>
     <lastmod>2026-11-19</lastmod>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/support/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/en/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/support/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/support/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://todaydate.ipe.rest/zh-hans/support/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/support/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/support/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/support/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/support/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/support/"/>
     <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/support/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://todaydate.ipe.rest/ar/support/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/en/support/"/>
-  </url>
-  <url>
-    <loc>https://todaydate.ipe.rest/zh-hans/</loc>
-    <lastmod>2026-11-19</lastmod>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/en/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://todaydate.ipe.rest/zh-hans/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/"/>
-    <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://todaydate.ipe.rest/ar/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/"/>
-  </url>
-  <url>
-    <loc>https://todaydate.ipe.rest/zh-hans/privacy/</loc>
-    <lastmod>2026-11-19</lastmod>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/en/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://todaydate.ipe.rest/zh-hans/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://todaydate.ipe.rest/ar/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/en/privacy/"/>
-  </url>
-  <url>
-    <loc>https://todaydate.ipe.rest/zh-hans/terms/</loc>
-    <lastmod>2026-11-19</lastmod>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/terms/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/en/terms/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/terms/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://todaydate.ipe.rest/zh-hans/terms/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/terms/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/terms/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/terms/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/terms/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/terms/"/>
-    <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/terms/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://todaydate.ipe.rest/ar/terms/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/en/terms/"/>
-  </url>
-  <url>
-    <loc>https://todaydate.ipe.rest/zh-hans/support/</loc>
-    <lastmod>2026-11-19</lastmod>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/support/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/en/support/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/support/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://todaydate.ipe.rest/zh-hans/support/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/support/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/support/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/support/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/support/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/support/"/>
-    <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/support/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://todaydate.ipe.rest/ar/support/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://todaydate.ipe.rest/th/support/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://todaydate.ipe.rest/vi/support/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/support/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/en/support/"/>
   </url>
   <url>
     <loc>https://todaydate.ipe.rest/zh-hant/</loc>
     <lastmod>2026-11-19</lastmod>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/en/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://todaydate.ipe.rest/zh-hans/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/"/>
     <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://todaydate.ipe.rest/ar/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://todaydate.ipe.rest/th/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://todaydate.ipe.rest/vi/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/"/>
   </url>
   <url>
     <loc>https://todaydate.ipe.rest/zh-hant/privacy/</loc>
     <lastmod>2026-11-19</lastmod>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/privacy/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/privacy/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://todaydate.ipe.rest/zh-hans/privacy/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/privacy/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/privacy/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/privacy/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/privacy/"/>
     <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://todaydate.ipe.rest/ar/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://todaydate.ipe.rest/th/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://todaydate.ipe.rest/vi/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/privacy/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/en/privacy/"/>
   </url>
   <url>
     <loc>https://todaydate.ipe.rest/zh-hant/terms/</loc>
     <lastmod>2026-11-19</lastmod>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/terms/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/en/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/terms/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/terms/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://todaydate.ipe.rest/zh-hans/terms/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/terms/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/terms/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/terms/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/terms/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/terms/"/>
     <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/terms/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://todaydate.ipe.rest/ar/terms/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://todaydate.ipe.rest/th/terms/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://todaydate.ipe.rest/vi/terms/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/terms/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/en/terms/"/>
   </url>
   <url>
     <loc>https://todaydate.ipe.rest/zh-hant/support/</loc>
     <lastmod>2026-11-19</lastmod>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/support/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/en/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/support/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/support/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://todaydate.ipe.rest/zh-hans/support/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/support/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/support/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/support/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/support/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/support/"/>
     <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/support/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://todaydate.ipe.rest/ar/support/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://todaydate.ipe.rest/th/support/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://todaydate.ipe.rest/vi/support/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/support/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/en/support/"/>
   </url>
   <url>
     <loc>https://todaydate.ipe.rest/es/</loc>
     <lastmod>2026-11-19</lastmod>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/en/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://todaydate.ipe.rest/zh-hans/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/"/>
     <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://todaydate.ipe.rest/ar/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://todaydate.ipe.rest/th/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://todaydate.ipe.rest/vi/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/"/>
   </url>
   <url>
     <loc>https://todaydate.ipe.rest/es/privacy/</loc>
     <lastmod>2026-11-19</lastmod>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/privacy/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/privacy/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://todaydate.ipe.rest/zh-hans/privacy/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/privacy/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/privacy/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/privacy/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/privacy/"/>
     <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://todaydate.ipe.rest/ar/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://todaydate.ipe.rest/th/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://todaydate.ipe.rest/vi/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/privacy/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/en/privacy/"/>
   </url>
   <url>
     <loc>https://todaydate.ipe.rest/es/terms/</loc>
     <lastmod>2026-11-19</lastmod>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/terms/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/en/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/terms/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/terms/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://todaydate.ipe.rest/zh-hans/terms/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/terms/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/terms/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/terms/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/terms/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/terms/"/>
     <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/terms/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://todaydate.ipe.rest/ar/terms/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://todaydate.ipe.rest/th/terms/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://todaydate.ipe.rest/vi/terms/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/terms/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/en/terms/"/>
   </url>
   <url>
     <loc>https://todaydate.ipe.rest/es/support/</loc>
     <lastmod>2026-11-19</lastmod>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/support/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/en/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/support/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/support/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://todaydate.ipe.rest/zh-hans/support/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/support/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/support/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/support/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/support/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/support/"/>
     <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/support/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://todaydate.ipe.rest/ar/support/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/en/support/"/>
-  </url>
-  <url>
-    <loc>https://todaydate.ipe.rest/fr/</loc>
-    <lastmod>2026-11-19</lastmod>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/en/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://todaydate.ipe.rest/zh-hans/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/"/>
-    <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://todaydate.ipe.rest/ar/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/"/>
-  </url>
-  <url>
-    <loc>https://todaydate.ipe.rest/fr/privacy/</loc>
-    <lastmod>2026-11-19</lastmod>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/en/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://todaydate.ipe.rest/zh-hans/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://todaydate.ipe.rest/ar/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/en/privacy/"/>
-  </url>
-  <url>
-    <loc>https://todaydate.ipe.rest/fr/terms/</loc>
-    <lastmod>2026-11-19</lastmod>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/terms/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/en/terms/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/terms/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://todaydate.ipe.rest/zh-hans/terms/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/terms/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/terms/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/terms/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/terms/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/terms/"/>
-    <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/terms/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://todaydate.ipe.rest/ar/terms/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/en/terms/"/>
-  </url>
-  <url>
-    <loc>https://todaydate.ipe.rest/fr/support/</loc>
-    <lastmod>2026-11-19</lastmod>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/support/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/en/support/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/support/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://todaydate.ipe.rest/zh-hans/support/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/support/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/support/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/support/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/support/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/support/"/>
-    <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/support/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://todaydate.ipe.rest/ar/support/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/en/support/"/>
-  </url>
-  <url>
-    <loc>https://todaydate.ipe.rest/de/</loc>
-    <lastmod>2026-11-19</lastmod>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/en/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://todaydate.ipe.rest/zh-hans/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/"/>
-    <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://todaydate.ipe.rest/ar/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/"/>
-  </url>
-  <url>
-    <loc>https://todaydate.ipe.rest/de/privacy/</loc>
-    <lastmod>2026-11-19</lastmod>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/en/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://todaydate.ipe.rest/zh-hans/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://todaydate.ipe.rest/ar/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/en/privacy/"/>
-  </url>
-  <url>
-    <loc>https://todaydate.ipe.rest/de/terms/</loc>
-    <lastmod>2026-11-19</lastmod>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/terms/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/en/terms/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/terms/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://todaydate.ipe.rest/zh-hans/terms/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/terms/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/terms/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/terms/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/terms/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/terms/"/>
-    <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/terms/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://todaydate.ipe.rest/ar/terms/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/en/terms/"/>
-  </url>
-  <url>
-    <loc>https://todaydate.ipe.rest/de/support/</loc>
-    <lastmod>2026-11-19</lastmod>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/support/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/en/support/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/support/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://todaydate.ipe.rest/zh-hans/support/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/support/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/support/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/support/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/support/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/support/"/>
-    <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/support/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://todaydate.ipe.rest/ar/support/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://todaydate.ipe.rest/th/support/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://todaydate.ipe.rest/vi/support/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/support/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/en/support/"/>
   </url>
   <url>
     <loc>https://todaydate.ipe.rest/pt-br/</loc>
     <lastmod>2026-11-19</lastmod>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/en/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://todaydate.ipe.rest/zh-hans/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/"/>
     <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://todaydate.ipe.rest/ar/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://todaydate.ipe.rest/th/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://todaydate.ipe.rest/vi/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/"/>
   </url>
   <url>
     <loc>https://todaydate.ipe.rest/pt-br/privacy/</loc>
     <lastmod>2026-11-19</lastmod>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/privacy/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/privacy/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://todaydate.ipe.rest/zh-hans/privacy/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/privacy/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/privacy/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/privacy/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/privacy/"/>
     <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://todaydate.ipe.rest/ar/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://todaydate.ipe.rest/th/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://todaydate.ipe.rest/vi/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/privacy/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/en/privacy/"/>
   </url>
   <url>
     <loc>https://todaydate.ipe.rest/pt-br/terms/</loc>
     <lastmod>2026-11-19</lastmod>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/terms/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/en/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/terms/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/terms/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://todaydate.ipe.rest/zh-hans/terms/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/terms/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/terms/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/terms/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/terms/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/terms/"/>
     <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/terms/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://todaydate.ipe.rest/ar/terms/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://todaydate.ipe.rest/th/terms/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://todaydate.ipe.rest/vi/terms/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/terms/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/en/terms/"/>
   </url>
   <url>
     <loc>https://todaydate.ipe.rest/pt-br/support/</loc>
     <lastmod>2026-11-19</lastmod>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/support/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/en/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/support/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/support/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://todaydate.ipe.rest/zh-hans/support/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/support/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/support/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/support/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/support/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/support/"/>
     <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/support/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://todaydate.ipe.rest/ar/support/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://todaydate.ipe.rest/th/support/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://todaydate.ipe.rest/vi/support/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/en/support/"/>
+  </url>
+  <url>
+    <loc>https://todaydate.ipe.rest/fr/</loc>
+    <lastmod>2026-11-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/en/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://todaydate.ipe.rest/th/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://todaydate.ipe.rest/vi/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/"/>
+  </url>
+  <url>
+    <loc>https://todaydate.ipe.rest/fr/privacy/</loc>
+    <lastmod>2026-11-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://todaydate.ipe.rest/th/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://todaydate.ipe.rest/vi/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/en/privacy/"/>
+  </url>
+  <url>
+    <loc>https://todaydate.ipe.rest/fr/terms/</loc>
+    <lastmod>2026-11-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/en/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/terms/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/terms/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/terms/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://todaydate.ipe.rest/th/terms/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://todaydate.ipe.rest/vi/terms/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/en/terms/"/>
+  </url>
+  <url>
+    <loc>https://todaydate.ipe.rest/fr/support/</loc>
+    <lastmod>2026-11-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/en/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/support/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://todaydate.ipe.rest/th/support/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://todaydate.ipe.rest/vi/support/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/en/support/"/>
+  </url>
+  <url>
+    <loc>https://todaydate.ipe.rest/de/</loc>
+    <lastmod>2026-11-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/en/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://todaydate.ipe.rest/th/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://todaydate.ipe.rest/vi/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/"/>
+  </url>
+  <url>
+    <loc>https://todaydate.ipe.rest/de/privacy/</loc>
+    <lastmod>2026-11-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://todaydate.ipe.rest/th/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://todaydate.ipe.rest/vi/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/en/privacy/"/>
+  </url>
+  <url>
+    <loc>https://todaydate.ipe.rest/de/terms/</loc>
+    <lastmod>2026-11-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/en/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/terms/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/terms/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/terms/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://todaydate.ipe.rest/th/terms/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://todaydate.ipe.rest/vi/terms/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/en/terms/"/>
+  </url>
+  <url>
+    <loc>https://todaydate.ipe.rest/de/support/</loc>
+    <lastmod>2026-11-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/en/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/support/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://todaydate.ipe.rest/th/support/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://todaydate.ipe.rest/vi/support/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/support/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/en/support/"/>
   </url>
   <url>
     <loc>https://todaydate.ipe.rest/id/</loc>
     <lastmod>2026-11-19</lastmod>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/en/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://todaydate.ipe.rest/zh-hans/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/"/>
     <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://todaydate.ipe.rest/ar/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://todaydate.ipe.rest/th/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://todaydate.ipe.rest/vi/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/"/>
   </url>
   <url>
     <loc>https://todaydate.ipe.rest/id/privacy/</loc>
     <lastmod>2026-11-19</lastmod>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/privacy/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/privacy/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://todaydate.ipe.rest/zh-hans/privacy/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/privacy/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/privacy/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/privacy/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/privacy/"/>
     <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://todaydate.ipe.rest/ar/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://todaydate.ipe.rest/th/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://todaydate.ipe.rest/vi/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/privacy/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/en/privacy/"/>
   </url>
   <url>
     <loc>https://todaydate.ipe.rest/id/terms/</loc>
     <lastmod>2026-11-19</lastmod>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/terms/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/en/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/terms/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/terms/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://todaydate.ipe.rest/zh-hans/terms/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/terms/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/terms/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/terms/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/terms/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/terms/"/>
     <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/terms/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://todaydate.ipe.rest/ar/terms/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://todaydate.ipe.rest/th/terms/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://todaydate.ipe.rest/vi/terms/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/terms/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/en/terms/"/>
   </url>
   <url>
     <loc>https://todaydate.ipe.rest/id/support/</loc>
     <lastmod>2026-11-19</lastmod>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/support/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/en/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/support/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/support/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://todaydate.ipe.rest/zh-hans/support/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/support/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/support/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/support/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/support/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/support/"/>
     <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/support/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://todaydate.ipe.rest/ar/support/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://todaydate.ipe.rest/th/support/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://todaydate.ipe.rest/vi/support/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/support/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/en/support/"/>
   </url>
   <url>
-    <loc>https://todaydate.ipe.rest/ar/</loc>
+    <loc>https://todaydate.ipe.rest/th/</loc>
     <lastmod>2026-11-19</lastmod>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/en/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://todaydate.ipe.rest/zh-hans/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/"/>
     <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://todaydate.ipe.rest/ar/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://todaydate.ipe.rest/th/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://todaydate.ipe.rest/vi/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/"/>
   </url>
   <url>
-    <loc>https://todaydate.ipe.rest/ar/privacy/</loc>
+    <loc>https://todaydate.ipe.rest/th/privacy/</loc>
     <lastmod>2026-11-19</lastmod>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/privacy/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/privacy/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://todaydate.ipe.rest/zh-hans/privacy/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/privacy/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/privacy/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/privacy/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/privacy/"/>
     <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://todaydate.ipe.rest/ar/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://todaydate.ipe.rest/th/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://todaydate.ipe.rest/vi/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/privacy/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/en/privacy/"/>
   </url>
   <url>
-    <loc>https://todaydate.ipe.rest/ar/terms/</loc>
+    <loc>https://todaydate.ipe.rest/th/terms/</loc>
     <lastmod>2026-11-19</lastmod>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/terms/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/en/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/terms/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/terms/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://todaydate.ipe.rest/zh-hans/terms/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/terms/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/terms/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/terms/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/terms/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/terms/"/>
     <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/terms/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://todaydate.ipe.rest/ar/terms/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://todaydate.ipe.rest/th/terms/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://todaydate.ipe.rest/vi/terms/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/terms/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/en/terms/"/>
   </url>
   <url>
-    <loc>https://todaydate.ipe.rest/ar/support/</loc>
+    <loc>https://todaydate.ipe.rest/th/support/</loc>
     <lastmod>2026-11-19</lastmod>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/support/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/en/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/support/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/support/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://todaydate.ipe.rest/zh-hans/support/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/support/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/support/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/support/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/support/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/support/"/>
     <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/support/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://todaydate.ipe.rest/ar/support/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://todaydate.ipe.rest/th/support/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://todaydate.ipe.rest/vi/support/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/en/support/"/>
+  </url>
+  <url>
+    <loc>https://todaydate.ipe.rest/vi/</loc>
+    <lastmod>2026-11-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/en/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://todaydate.ipe.rest/th/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://todaydate.ipe.rest/vi/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/"/>
+  </url>
+  <url>
+    <loc>https://todaydate.ipe.rest/vi/privacy/</loc>
+    <lastmod>2026-11-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://todaydate.ipe.rest/th/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://todaydate.ipe.rest/vi/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/en/privacy/"/>
+  </url>
+  <url>
+    <loc>https://todaydate.ipe.rest/vi/terms/</loc>
+    <lastmod>2026-11-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/en/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/terms/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/terms/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/terms/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://todaydate.ipe.rest/th/terms/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://todaydate.ipe.rest/vi/terms/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/en/terms/"/>
+  </url>
+  <url>
+    <loc>https://todaydate.ipe.rest/vi/support/</loc>
+    <lastmod>2026-11-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/en/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/support/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://todaydate.ipe.rest/th/support/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://todaydate.ipe.rest/vi/support/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/en/support/"/>
+  </url>
+  <url>
+    <loc>https://todaydate.ipe.rest/tr/</loc>
+    <lastmod>2026-11-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/en/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://todaydate.ipe.rest/th/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://todaydate.ipe.rest/vi/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/"/>
+  </url>
+  <url>
+    <loc>https://todaydate.ipe.rest/tr/privacy/</loc>
+    <lastmod>2026-11-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://todaydate.ipe.rest/th/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://todaydate.ipe.rest/vi/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/en/privacy/"/>
+  </url>
+  <url>
+    <loc>https://todaydate.ipe.rest/tr/terms/</loc>
+    <lastmod>2026-11-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/en/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/terms/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/terms/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/terms/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://todaydate.ipe.rest/th/terms/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://todaydate.ipe.rest/vi/terms/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/en/terms/"/>
+  </url>
+  <url>
+    <loc>https://todaydate.ipe.rest/tr/support/</loc>
+    <lastmod>2026-11-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/en/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/support/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://todaydate.ipe.rest/th/support/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://todaydate.ipe.rest/vi/support/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/support/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/en/support/"/>
   </url>
 </urlset>

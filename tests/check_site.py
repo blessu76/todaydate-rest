@@ -7,9 +7,11 @@
 Checks (each failure prints its reason):
   1. every <loc> in sitemap.xml maps to a file inside the tree (…/index.html, or a .html file).
   2. every index.html page (except design/ and dot-dirs) is listed in sitemap.xml.
-  3. every page's hreflang alternates match the language folders (en/ko/…, as BCP 47 tags:
+  3. every page's hreflang alternates match the language folders (the 12 standard languages, as BCP 47 tags:
      zh-hans -> zh-Hans, zh-hant -> zh-Hant, pt-br -> pt-BR), include x-default, point at their
      own folder, and <html lang> of a language page equals its tag.
+     Ended languages (zh-hans, ar) are exempt: they must be noindex, link to /en/, carry no
+     hreflang and not be in sitemap.xml.
   4. every relative or root-relative internal href/src resolves to a file in the tree.
 
 Pages are index.html files; design/ mockups are not site pages and are skipped.
@@ -31,6 +33,11 @@ SITEMAP_NS = "{http://www.sitemaps.org/schemas/sitemap/0.9}"
 # Folder names are lowercase URL paths; the language tags used in hreflang and
 # <html lang> are BCP 47 (script subtags capitalised, region uppercase).
 BCP47_TAG = {"zh-hans": "zh-Hans", "zh-hant": "zh-Hant", "pt-br": "pt-BR"}
+# Company standard (kit-0029 / ADR-0087): 12 languages, as folders. Ended languages keep their
+# pages (not deleted) but are out of the selector, hreflang and sitemap; they must be noindex
+# and point readers to /en/.
+STANDARD_FOLDERS = ["en", "ko", "ja", "zh-hant", "es", "pt-br", "fr", "de", "id", "th", "vi", "tr"]
+ENDED_FOLDERS = {"zh-hans", "ar", "ru", "hi"}
 
 
 def tag_for(folder):
@@ -46,6 +53,7 @@ class _Collect(HTMLParser):
         self.alternates = []  # (hreflang, href)
         self.html_lang = None  # value of <html lang>
         self.refs = []  # href/src values
+        self.noindex = False  # <meta name="robots" content="...noindex...">
 
     def handle_starttag(self, tag, attrs):
         a = {k.lower(): (v or "") for k, v in attrs}
@@ -54,6 +62,8 @@ class _Collect(HTMLParser):
         for key in ("href", "src"):
             if key in a:
                 self.refs.append(a[key].strip())
+        if tag == "meta" and a.get("name", "").lower() == "robots" and "noindex" in a.get("content", "").lower():
+            self.noindex = True
         if tag == "link" and a.get("rel", "").lower() == "alternate" and "hreflang" in a:
             self.alternates.append((a["hreflang"].strip(), a.get("href", "").strip()))
 
@@ -115,6 +125,10 @@ def check_sitemap(root, origin, pages, errs):
             errs.append("sitemap.xml: <loc> %s -> %s not found in repo" % (url, f))
         listed.add(f)
     for page in pages:
+        if Path(page).parts[0] in ENDED_FOLDERS:
+            if page in listed:
+                errs.append("%s: ended language must not be listed in sitemap.xml" % page)
+            continue
         if page not in listed:
             errs.append("%s: not listed in sitemap.xml" % page)
 
@@ -130,10 +144,23 @@ def lang_folders(root):
 def check_hreflang(root, origin, pages, langs, errs):
     # hreflang codes must be the BCP 47 tag of each language folder; each code's
     # href must point at that folder; <html lang> of a language page must match it too.
-    expected = {tag_for(f): f for f in langs}
+    active = [f for f in langs if f not in ENDED_FOLDERS]
+    if sorted(active) != sorted(STANDARD_FOLDERS):
+        errs.append("language folders %s do not match the 12 standard languages %s"
+                    % (sorted(active), sorted(STANDARD_FOLDERS)))
+    expected = {tag_for(f): f for f in active}
     for page in pages:
         parser = _Collect()
         parser.feed((Path(root) / page).read_text(encoding="utf-8"))
+        top = Path(page).parts[0] if len(Path(page).parts) > 1 else None
+        if top in ENDED_FOLDERS:
+            if parser.alternates:
+                errs.append("%s: ended language must not carry hreflang alternates" % page)
+            if not parser.noindex:
+                errs.append("%s: ended language must be noindex" % page)
+            if not any(r.startswith("/en/") for r in parser.refs):
+                errs.append("%s: ended language must link to /en/" % page)
+            continue
         alts = parser.alternates
         codes = [h for h, _ in alts]
         if "x-default" not in codes:
