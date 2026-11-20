@@ -2,6 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>TODAYDATE_PUSH</key><string>1</string>
+    <key>GIT_TERMINAL_PROMPT</key><string>0</string>
+    <key>PATH</key><string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin</string>
+  </dict>
   <key>Label</key><string>rest.ipe.todaydate-publish</string>
   <key>ProgramArguments</key>
   <array>
