@@ -1,0 +1,24 @@
+/* Journal pages only (journal/, ko/journal/). Built on the tokens in site.css. */
+.journal, .journal-post { padding-top: var(--space-6); padding-bottom: var(--space-6); }
+.journal h1, .journal-post h1 { font-size: clamp(1.9rem, 6vw, 2.6rem); line-height: 1.2; margin: var(--space-2) 0 var(--space-3); overflow-wrap: anywhere; }
+.lead { font-size: 1.05rem; line-height: 1.6; margin: 0 0 var(--space-5); }
+.jlist { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--space-4); }
+.jitem { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-card); padding: var(--space-5); }
+.jitem h2 { font-size: 1.2rem; line-height: 1.35; margin: var(--space-2) 0; overflow-wrap: anywhere; }
+.jitem h2 a { color: var(--ink); text-decoration: none; }
+.jitem h2 a:hover, .jitem h2 a:focus-visible { text-decoration: underline; }
+.jitem p { margin: 0; }
+.journal-post .eyebrow { margin: 0; }
+.journal-post .eyebrow a { color: inherit; }
+.prose { max-width: 66ch; font-size: 1.02rem; line-height: 1.75; }
+.prose h2 { font-size: 1.3rem; margin: var(--space-6) 0 var(--space-3); line-height: 1.3; }
+.prose h3 { font-size: 1.1rem; margin: var(--space-5) 0 var(--space-2); }
+.prose p, .prose ul, .prose ol { margin: 0 0 var(--space-4); }
+.prose ul, .prose ol { padding-left: 1.4rem; }
+.prose li { margin-bottom: var(--space-2); }
+.prose a { color: var(--action); }
+.prose code { font-size: .95em; background: var(--surface); border: 1px solid var(--line); border-radius: .35rem; padding: 0 .3em; }
+.journal-post .back { display: inline-block; margin-top: var(--space-5); color: var(--action); }
+@media (min-width: 768px) {
+  .jlist { grid-template-columns: 1fr 1fr; }
+}

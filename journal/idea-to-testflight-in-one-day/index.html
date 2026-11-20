@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>From Idea to TestFlight in One Day · 오늘 어때</title>
+<meta name="description" content="On 19 November we went from an empty repository to the first TestFlight build of 오늘 어때. Here is what we cut to make that possible.">
+<meta name="theme-color" content="#f7f5ed" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#131e19" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="article">
+<meta property="og:title" content="From Idea to TestFlight in One Day · 오늘 어때">
+<meta property="og:description" content="On 19 November we went from an empty repository to the first TestFlight build of 오늘 어때. Here is what we cut to make that possible.">
+<meta property="og:url" content="https://todaydate.ipe.rest/journal/idea-to-testflight-in-one-day/">
+<link rel="canonical" href="https://todaydate.ipe.rest/journal/idea-to-testflight-in-one-day/">
+<link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/journal/idea-to-testflight-in-one-day/">
+<link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/journal/idea-to-testflight-in-one-day/">
+<link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/journal/idea-to-testflight-in-one-day/">
+<link rel="icon" href="/assets/icon.svg?v=20261119" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/site.css?v=20261119">
+<link rel="stylesheet" href="/assets/journal.css?v=20261120">
+<script>
+try { var s = localStorage.getItem('todaydate-theme'); if (s === 'light' || s === 'dark') document.documentElement.dataset.theme = s; } catch (e) {}
+</script>
+</head>
+<body>
+<header>
+  <div class="wrap bar">
+    <a class="wordmark" href="/en/">오늘 어때</a>
+    <div class="bar-end">
+      <a class="button secondary" href="/journal/" aria-current="page">Journal</a>
+      <a class="button secondary" href="/ko/journal/idea-to-testflight-in-one-day/" hreflang="ko" lang="ko">한국어</a>
+      <button type="button" class="button secondary theme-toggle" data-theme-toggle aria-label="Switch dark/light">Theme</button>
+    </div>
+  </div>
+</header>
+<main id="main" class="wrap journal-post">
+  <p class="eyebrow"><a href="/journal/">Journal</a> · <time datetime="2026-11-20">2026-11-20</time></p>
+  <h1>From Idea to TestFlight in One Day</h1>
+  <p class="muted lead">On 19 November we went from an empty repository to the first TestFlight build of 오늘 어때. Here is what we cut to make that possible.</p>
+  <div class="prose">
+<p>On 19 November, 오늘 어때 went from an empty project to a first build on TestFlight. The point of the day was not to ship everything. It was to ship one complete loop, so we could see whether the game works before we add more.</p>
+<h2>The loop we kept</h2>
+<p>The first build has one path: home, a partner, five scenes, a choice at each scene, an affection bar, an ending, and a collection of postcards. Every other idea waited until this path worked from start to finish.</p>
+<ul><li><strong>Home</strong> shows today's scene.</li><li><strong>Partner</strong> sets who you are going out with.</li><li><strong>Five scenes</strong> each offer a choice that moves the story.</li><li><strong>Ending and collection</strong> keep the stories you finished as postcards.</li></ul>
+<h2>What we cut</h2>
+<ul><li>Extra languages. The first build shipped Korean and English. Other languages fall back to English until we translate them.</li><li>Extra scenes. The first build used a small set so the flow could be tested end to end.</li><li>Polish that did not change the loop. We fixed what blocked a tester and left the rest for the next pass.</li></ul>
+<h2>What we learned</h2>
+<p>A one-day build is mostly about deciding what not to do. Each cut made the next step smaller, and the build was real enough to test on a phone the same day.</p>
+<p>The next post covers the scenes we shipped in version 1.1.</p>
+  </div>
+  <p><a class="back" href="/journal/">← Journal</a></p>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="muted">오늘 어때 · ipe Studio</p>
+    <nav aria-label="Support"><ul class="lang-list"><li><a href="/journal/">Journal</a></li><li><a href="/en/privacy/">Privacy Policy</a></li><li><a href="/en/terms/">Terms of Use</a></li><li><a href="/en/support/">Support</a></li></ul></nav>
+  </div>
+</footer>
+<script>
+(function () {
+  var b = document.querySelector('[data-theme-toggle]');
+  if (!b) return;
+  b.addEventListener('click', function () {
+    var r = document.documentElement;
+    var dark = r.dataset.theme ? r.dataset.theme === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
+    var next = dark ? 'light' : 'dark';
+    r.dataset.theme = next;
+    try { localStorage.setItem('todaydate-theme', next); } catch (e) {}
+  });
+})();
+</script>
+</body>
+</html>

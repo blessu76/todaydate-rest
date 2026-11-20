@@ -833,4 +833,32 @@
     <xhtml:link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/support/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/en/support/"/>
   </url>
+  <url>
+    <loc>https://todaydate.ipe.rest/journal/idea-to-testflight-in-one-day/</loc>
+    <lastmod>2026-11-20</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/journal/idea-to-testflight-in-one-day/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/journal/idea-to-testflight-in-one-day/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/journal/idea-to-testflight-in-one-day/"/>
+  </url>
+  <url>
+    <loc>https://todaydate.ipe.rest/ko/journal/idea-to-testflight-in-one-day/</loc>
+    <lastmod>2026-11-20</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/journal/idea-to-testflight-in-one-day/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/journal/idea-to-testflight-in-one-day/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/journal/idea-to-testflight-in-one-day/"/>
+  </url>
+  <url>
+    <loc>https://todaydate.ipe.rest/journal/</loc>
+    <lastmod>2026-11-20</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/journal/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/journal/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/journal/"/>
+  </url>
+  <url>
+    <loc>https://todaydate.ipe.rest/ko/journal/</loc>
+    <lastmod>2026-11-20</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/journal/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/journal/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/journal/"/>
+  </url>
 </urlset>
