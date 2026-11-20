@@ -22,6 +22,9 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.abspath(os.environ.get("TODAYDATE_REPO") or os.path.expanduser("~/Developer/datepick-rest"))
 LANGS = ("en", "ko")
 PUSH_TIMEOUT = 60  # 초. 네트워크가 멎어도 틱이 멈추지 않게 한다.
+PULL_TIMEOUT = 60
+# 발행이 만드는 경로만 add 한다(git add -A 금지).
+ADD_PATHS = ("content/journal", "journal", "ko/journal", "sitemap.xml")
 
 
 def next_folder(queue):
@@ -59,6 +62,23 @@ def sh(*cmd, cwd=None):
     return subprocess.run(cmd, cwd=cwd or REPO, check=True, text=True, capture_output=True).stdout.strip()
 
 
+def pull_rebase():
+    """git pull --rebase. 실패·시간 초과면 rebase 를 중단해 클론을 깨끗하게 남기고 False."""
+    env = {**os.environ, "GIT_TERMINAL_PROMPT": "0"}
+    try:
+        subprocess.run(["git", "pull", "--rebase", "origin", "main"], cwd=REPO, check=True, text=True,
+                       capture_output=True, timeout=PULL_TIMEOUT, env=env)
+        return True
+    except subprocess.CalledProcessError as e:
+        print(f"pull --rebase 실패: {(e.stderr or e.stdout or '').strip()}", file=sys.stderr)
+    except subprocess.TimeoutExpired:
+        print(f"pull --rebase 시간 초과({PULL_TIMEOUT}초)", file=sys.stderr)
+    except OSError as e:
+        print(f"git 을 실행하지 못함: {e}", file=sys.stderr)
+    subprocess.run(["git", "rebase", "--abort"], cwd=REPO, capture_output=True, text=True, env=env)
+    return False
+
+
 def push():
     """origin main 으로 push. 실패·시간 초과는 stderr 에 남기고 False — 발행 자체는 실패로 보지 않는다."""
     env = {**os.environ, "GIT_TERMINAL_PROMPT": "0"}
@@ -92,12 +112,15 @@ def publish(queue, date, hhmm, dry_run=False, pull=True):
         print("main 브랜치가 아니거나 작업 트리가 깨끗하지 않아 발행하지 않는다", file=sys.stderr)
         return 4
     if pull:
-        sh("git", "pull", "--rebase", "origin", "main")
+        if not pull_rebase():
+            print("pull 실패로 발행하지 않는다(클론은 되돌림)", file=sys.stderr)
+            return 5
     slug = name.split("-", 1)[1]
     dst = os.path.join(REPO, "content", "journal", slug)
     created = not os.path.isdir(dst)
-    os.makedirs(dst, exist_ok=True)
+    committed = False
     try:
+        os.makedirs(dst, exist_ok=True)
         for lang, text in editions(os.path.join(queue, name)):
             with open(os.path.join(dst, lang + ".md"), "w", encoding="utf-8") as f:
                 f.write(stamp(text, date, hhmm))
@@ -107,11 +130,16 @@ def publish(queue, date, hhmm, dry_run=False, pull=True):
             print(f"dry-run ok: {slug} would publish as {date} {hhmm} KST (not committed)")
             _revert(created, dst)
             return 0
-        sh("git", "add", "-A")
+        sh("git", "add", "--", *[p for p in ADD_PATHS if os.path.exists(os.path.join(REPO, p))])
         sh("git", "commit", "-m", f"저널: {slug} ({date} {hhmm} KST)")
-    except (subprocess.CalledProcessError, FileNotFoundError) as e:
-        print((getattr(e, "stdout", "") or "") + (getattr(e, "stderr", "") or "") + str(e), file=sys.stderr)
-        _revert(created, dst)
+        committed = True
+    except Exception as e:  # 예상 밖 예외(UnicodeDecodeError·OSError 등)에서도 되돌린다
+        print((getattr(e, "stdout", "") or "") + (getattr(e, "stderr", "") or "") + repr(e), file=sys.stderr)
+        if not committed:
+            try:
+                _revert(created, dst)
+            except Exception as e2:
+                print(f"되돌림 실패: {e2!r}", file=sys.stderr)
         return 5
     if os.environ.get("TODAYDATE_PUSH") == "1":
         push()  # 실패해도 발행은 성공 — 아래에서 큐를 옮긴다.

@@ -34,6 +34,20 @@ class RenderTest(unittest.TestCase):
     def test_text_is_escaped(self):
         self.assertIn("&lt;script&gt;", journal_md.render("<script>"))
 
+    def test_link_ampersand_escaped_once(self):
+        out = journal_md.render("[q](https://e.x/?a=1&b=2)")
+        self.assertIn('href="https://e.x/?a=1&amp;b=2"', out)
+        self.assertNotIn("&amp;amp;", out)
+
+    def test_link_scheme_allowlist(self):
+        for bad in ("javascript:alert%281%29", "JavaScript:x", "data:text/html,hi", "vbscript:x",
+                    "java\tscript:x"):
+            out = journal_md.render(f"[k]({bad})")
+            self.assertNotIn("href", out, bad)
+            self.assertIn("k", out)
+        for good in ("https://e.x/", "http://e.x/", "mailto:a@e.x", "/journal/", "../x/", "#top"):
+            self.assertIn(f'href="{good}"', journal_md.render(f"[k]({good})"), good)
+
 
 def write_post(root, slug, lang, title, date, time, langs_present=None):
     d = Path(root) / "content" / "journal" / slug

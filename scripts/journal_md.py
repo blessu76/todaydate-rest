@@ -26,13 +26,25 @@ def parse(text):
     return meta, m.group(2).strip() + "\n"
 
 
+SAFE_SCHEMES = ("http", "https", "mailto")
+
+
+def _link(m):
+    """링크 하나 -> <a>. scheme 은 http·https·mailto 만(상대경로는 허용), 그 밖(javascript: data: …)은 글자만 남긴다."""
+    label, raw = m.group(1), html.unescape(m.group(2))  # inline() 이 이미 escape 했으니 되돌려 한 번만 escape 한다
+    probe = re.sub(r"[\x00-\x20\x7f]", "", raw)
+    sm = re.match(r"([A-Za-z][A-Za-z0-9+.\-]*):", probe)
+    if sm and sm.group(1).lower() not in SAFE_SCHEMES:
+        return label
+    return f'<a href="{html.escape(raw, quote=True)}">{label}</a>'
+
+
 def inline(s):
     s = html.escape(s, quote=False)
     s = re.sub(r"`([^`]+)`", r"<code>\1</code>", s)
     s = re.sub(r"\*\*([^*]+)\*\*", r"<strong>\1</strong>", s)
     s = re.sub(r"(?<![*\w])\*([^*\n]+)\*(?![*\w])", r"<em>\1</em>", s)
-    s = re.sub(r"\[([^\]]+)\]\(([^)\s]+)\)",
-               lambda m: f'<a href="{html.escape(m.group(2), quote=True)}">{m.group(1)}</a>', s)
+    s = re.sub(r"\[([^\]]+)\]\(([^)\s]+)\)", _link, s)
     return s
 
 
