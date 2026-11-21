@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Thirty Scenes, Twenty Free · 오늘 어때</title>
+<meta name="description" content="오늘 어때 launches with thirty Korean scenes. Twenty are free, and ten sit in a scene pack. Here is why we split them that way.">
+<meta name="theme-color" content="#f7f5ed" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#131e19" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Thirty Scenes, Twenty Free · 오늘 어때">
+<meta property="og:description" content="오늘 어때 launches with thirty Korean scenes. Twenty are free, and ten sit in a scene pack. Here is why we split them that way.">
+<meta property="og:url" content="https://todaydate.ipe.rest/journal/thirty-scenes/">
+<link rel="canonical" href="https://todaydate.ipe.rest/journal/thirty-scenes/">
+<link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/journal/thirty-scenes/">
+<link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/journal/thirty-scenes/">
+<link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/journal/thirty-scenes/">
+<link rel="icon" href="/assets/icon.svg?v=20261119" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/site.css?v=20261119">
+<link rel="stylesheet" href="/assets/journal.css?v=20261120">
+<script>
+try { var s = localStorage.getItem('todaydate-theme'); if (s === 'light' || s === 'dark') document.documentElement.dataset.theme = s; } catch (e) {}
+</script>
+</head>
+<body>
+<header>
+  <div class="wrap bar">
+    <a class="wordmark" href="/en/">오늘 어때</a>
+    <div class="bar-end">
+      <a class="button secondary" href="/journal/" aria-current="page">Journal</a>
+      <a class="button secondary" href="/ko/journal/thirty-scenes/" hreflang="ko" lang="ko">한국어</a>
+      <button type="button" class="button secondary theme-toggle" data-theme-toggle aria-label="Switch dark/light">Theme</button>
+    </div>
+  </div>
+</header>
+<main id="main" class="wrap journal-post">
+  <p class="eyebrow"><a href="/journal/">Journal</a> · <time datetime="2026-11-21">2026-11-21</time></p>
+  <h1>Thirty Scenes, Twenty Free</h1>
+  <p class="muted lead">오늘 어때 launches with thirty Korean scenes. Twenty are free, and ten sit in a scene pack. Here is why we split them that way.</p>
+  <div class="prose">
+<p>오늘 어때 starts with thirty scenes written in Korean. Twenty of them are free. The other ten are a scene pack you can choose to unlock later.</p>
+<h2>Why thirty</h2>
+<p>Thirty is enough for one evening to feel different from the last. A round uses five scenes, one from each category, in order. With four free options in each category, the free set alone gives 1,024 possible rounds.</p>
+<h2>Why twenty free</h2>
+<p>A player should be able to finish many rounds before deciding whether to spend anything. Twenty free scenes give each category several choices, so the game does not repeat the same date every night.</p>
+<h2>Why a pack of ten</h2>
+<p>The pack holds the scenes that depend on a season or a kind of day: a rainy day, a winter walk, an anniversary. Keeping them together means a player who wants them can buy one thing, not ten.</p>
+<p>The game has no ads and no paid upgrades that change the outcome of a scene. A pack adds scenes; it does not change the rules.</p>
+  </div>
+  <p><a class="back" href="/journal/">← Journal</a></p>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="muted">오늘 어때 · ipe Studio</p>
+    <nav aria-label="Support"><ul class="lang-list"><li><a href="/journal/">Journal</a></li><li><a href="/en/privacy/">Privacy Policy</a></li><li><a href="/en/terms/">Terms of Use</a></li><li><a href="/en/support/">Support</a></li></ul></nav>
+  </div>
+</footer>
+<script>
+(function () {
+  var b = document.querySelector('[data-theme-toggle]');
+  if (!b) return;
+  b.addEventListener('click', function () {
+    var r = document.documentElement;
+    var dark = r.dataset.theme ? r.dataset.theme === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
+    var next = dark ? 'light' : 'dark';
+    r.dataset.theme = next;
+    try { localStorage.setItem('todaydate-theme', next); } catch (e) {}
+  });
+})();
+</script>
+</body>
+</html>
