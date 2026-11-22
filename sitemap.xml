@@ -848,6 +848,20 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/journal/idea-to-testflight-in-one-day/"/>
   </url>
   <url>
+    <loc>https://todaydate.ipe.rest/journal/rainy-season-pack/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/journal/rainy-season-pack/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/journal/rainy-season-pack/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/journal/rainy-season-pack/"/>
+  </url>
+  <url>
+    <loc>https://todaydate.ipe.rest/ko/journal/rainy-season-pack/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/journal/rainy-season-pack/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/journal/rainy-season-pack/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/journal/rainy-season-pack/"/>
+  </url>
+  <url>
     <loc>https://todaydate.ipe.rest/journal/thirty-scenes/</loc>
     <lastmod>2026-11-21</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/journal/thirty-scenes/"/>
@@ -863,14 +877,14 @@
   </url>
   <url>
     <loc>https://todaydate.ipe.rest/journal/</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/journal/"/>
     <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/journal/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/journal/"/>
   </url>
   <url>
     <loc>https://todaydate.ipe.rest/ko/journal/</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/journal/"/>
     <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/journal/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/journal/"/>
