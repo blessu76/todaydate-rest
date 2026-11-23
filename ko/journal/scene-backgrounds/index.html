@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ko" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>장면마다 배경과 표정이 따로 있다 · 오늘 어때</title>
+<meta name="description" content="오늘 어때에서는 두 장면이 같은 그림을 쓰지 않는다. 장면마다 배경, 시간대, 인물 표정이 어떻게 정해지는지 적는다.">
+<meta name="theme-color" content="#f7f5ed" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#131e19" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="article">
+<meta property="og:title" content="장면마다 배경과 표정이 따로 있다 · 오늘 어때">
+<meta property="og:description" content="오늘 어때에서는 두 장면이 같은 그림을 쓰지 않는다. 장면마다 배경, 시간대, 인물 표정이 어떻게 정해지는지 적는다.">
+<meta property="og:url" content="https://todaydate.ipe.rest/ko/journal/scene-backgrounds/">
+<link rel="canonical" href="https://todaydate.ipe.rest/ko/journal/scene-backgrounds/">
+<link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/journal/scene-backgrounds/">
+<link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/journal/scene-backgrounds/">
+<link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/journal/scene-backgrounds/">
+<link rel="icon" href="/assets/icon.svg?v=20261119" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/site.css?v=20261119">
+<link rel="stylesheet" href="/assets/journal.css?v=20261120">
+<script>
+try { var s = localStorage.getItem('todaydate-theme'); if (s === 'light' || s === 'dark') document.documentElement.dataset.theme = s; } catch (e) {}
+</script>
+</head>
+<body>
+<header>
+  <div class="wrap bar">
+    <a class="wordmark" href="/ko/">오늘 어때</a>
+    <div class="bar-end">
+      <a class="button secondary" href="/ko/journal/" aria-current="page">저널</a>
+      <a class="button secondary" href="/journal/scene-backgrounds/" hreflang="en" lang="en">English</a>
+      <button type="button" class="button secondary theme-toggle" data-theme-toggle aria-label="Switch dark/light">테마</button>
+    </div>
+  </div>
+</header>
+<main id="main" class="wrap journal-post">
+  <p class="eyebrow"><a href="/ko/journal/">저널</a> · <time datetime="2026-11-23">2026-11-23</time></p>
+  <h1>장면마다 배경과 표정이 따로 있다</h1>
+  <p class="muted lead">오늘 어때에서는 두 장면이 같은 그림을 쓰지 않는다. 장면마다 배경, 시간대, 인물 표정이 어떻게 정해지는지 적는다.</p>
+  <div class="prose">
+<p>오늘 어때에서는 두 장면이 같은 그림을 쓰지 않는다. 밤의 카페는 낮의 카페와 다르고, 눈 내린 공원은 비 오는 공원과 다르다. 장면마다 배경이 따로 있고, 이야기가 진행되면서 인물의 표정도 바뀐다.</p>
+<h2>장면이 정해지는 방식</h2>
+<p>장면마다 계절, 날씨, 시간대, 배경 키를 적어 둔다. 배경 키는 그림 쪽에 어떤 배경을 그릴지 알려 준다. 비에 관한 장면은 비 배경을 쓰고, 밤 장면은 더 어두운 색을 쓴다.</p>
+<h2>표정은 선택을 따라간다</h2>
+<p>인물은 고른 답에 반응한다. 따뜻한 답에는 미소가, 장난스러운 답에는 웃음이, 무심한 답에는 잠깐의 멈춤이 온다. 반응은 인물마다 정해진 작은 묶음에서 가져와서, 장면이 바뀌어도 표정이 일관되게 이어진다.</p>
+<h2>왜 중요한가</h2>
+<p>한 판에서 같은 방을 다섯 번 보면 플레이어는 장면을 읽지 않게 된다. 배경과 표정을 바꾸면 말을 읽기 전에도 각 선택이 이야기 속 자리를 갖는다.</p>
+  </div>
+  <p><a class="back" href="/ko/journal/">← 저널</a></p>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="muted">오늘 어때 · ipe Studio</p>
+    <nav aria-label="Support"><ul class="lang-list"><li><a href="/ko/journal/">저널</a></li><li><a href="/ko/privacy/">개인정보 처리방침</a></li><li><a href="/ko/terms/">이용약관</a></li><li><a href="/ko/support/">지원</a></li></ul></nav>
+  </div>
+</footer>
+<script>
+(function () {
+  var b = document.querySelector('[data-theme-toggle]');
+  if (!b) return;
+  b.addEventListener('click', function () {
+    var r = document.documentElement;
+    var dark = r.dataset.theme ? r.dataset.theme === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
+    var next = dark ? 'light' : 'dark';
+    r.dataset.theme = next;
+    try { localStorage.setItem('todaydate-theme', next); } catch (e) {}
+  });
+})();
+</script>
+</body>
+</html>

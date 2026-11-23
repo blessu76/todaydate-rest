@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Each Scene Gets Its Own Background and Expressions · 오늘 어때</title>
+<meta name="description" content="No two scenes in 오늘 어때 share the same picture. Here is how each scene gets its own background, time of day and character expressions.">
+<meta name="theme-color" content="#f7f5ed" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#131e19" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Each Scene Gets Its Own Background and Expressions · 오늘 어때">
+<meta property="og:description" content="No two scenes in 오늘 어때 share the same picture. Here is how each scene gets its own background, time of day and character expressions.">
+<meta property="og:url" content="https://todaydate.ipe.rest/journal/scene-backgrounds/">
+<link rel="canonical" href="https://todaydate.ipe.rest/journal/scene-backgrounds/">
+<link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/journal/scene-backgrounds/">
+<link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/journal/scene-backgrounds/">
+<link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/journal/scene-backgrounds/">
+<link rel="icon" href="/assets/icon.svg?v=20261119" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/site.css?v=20261119">
+<link rel="stylesheet" href="/assets/journal.css?v=20261120">
+<script>
+try { var s = localStorage.getItem('todaydate-theme'); if (s === 'light' || s === 'dark') document.documentElement.dataset.theme = s; } catch (e) {}
+</script>
+</head>
+<body>
+<header>
+  <div class="wrap bar">
+    <a class="wordmark" href="/en/">오늘 어때</a>
+    <div class="bar-end">
+      <a class="button secondary" href="/journal/" aria-current="page">Journal</a>
+      <a class="button secondary" href="/ko/journal/scene-backgrounds/" hreflang="ko" lang="ko">한국어</a>
+      <button type="button" class="button secondary theme-toggle" data-theme-toggle aria-label="Switch dark/light">Theme</button>
+    </div>
+  </div>
+</header>
+<main id="main" class="wrap journal-post">
+  <p class="eyebrow"><a href="/journal/">Journal</a> · <time datetime="2026-11-23">2026-11-23</time></p>
+  <h1>Each Scene Gets Its Own Background and Expressions</h1>
+  <p class="muted lead">No two scenes in 오늘 어때 share the same picture. Here is how each scene gets its own background, time of day and character expressions.</p>
+  <div class="prose">
+<p>In 오늘 어때, no two scenes use the same picture. A cafe at night looks different from a cafe at noon. A park in the snow is not a park in the rain. Each scene has its own background, and its characters change expression as the story moves.</p>
+<h2>How a scene is set</h2>
+<p>Every scene records a few things: its season, its weather, the time of day, and a background key. The background key tells the art which image to draw. A scene about rain uses a rain background. A night scene uses a darker palette.</p>
+<h2>Expressions follow the choice</h2>
+<p>The characters react to what you pick. A warm answer brings a smile. A teasing answer brings a grin. A careless one brings a pause. The reaction is drawn from a small set for each character, so the expressions stay consistent from scene to scene.</p>
+<h2>Why it matters</h2>
+<p>A player who sees the same room five times in a round stops reading the scene. Changing the background and the expression gives each choice a place in the story, even before the words are read.</p>
+  </div>
+  <p><a class="back" href="/journal/">← Journal</a></p>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="muted">오늘 어때 · ipe Studio</p>
+    <nav aria-label="Support"><ul class="lang-list"><li><a href="/journal/">Journal</a></li><li><a href="/en/privacy/">Privacy Policy</a></li><li><a href="/en/terms/">Terms of Use</a></li><li><a href="/en/support/">Support</a></li></ul></nav>
+  </div>
+</footer>
+<script>
+(function () {
+  var b = document.querySelector('[data-theme-toggle]');
+  if (!b) return;
+  b.addEventListener('click', function () {
+    var r = document.documentElement;
+    var dark = r.dataset.theme ? r.dataset.theme === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
+    var next = dark ? 'light' : 'dark';
+    r.dataset.theme = next;
+    try { localStorage.setItem('todaydate-theme', next); } catch (e) {}
+  });
+})();
+</script>
+</body>
+</html>
