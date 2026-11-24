@@ -64,14 +64,10 @@ button, select { font: inherit; }
 .muted { color: var(--muted); }
 .eyebrow { color: var(--action); font-size: var(--text-small); font-weight: 750; }
 .art { position: relative; display: grid; place-items: center; isolation: isolate; overflow: hidden; aspect-ratio: 16 / 10; background: var(--mint); border-radius: var(--radius-card) var(--radius-card) 0 0; }
-.art::before { position: absolute; inset: 0; z-index: -1; content: ""; background: repeating-linear-gradient(135deg, transparent 0 5px, #2049390b 5px 6px); }
-.window { position: relative; width: 59%; height: 76%; border: 5px solid var(--art-ink); border-radius: 50% 50% 0 0 / 62% 62% 0 0; overflow: hidden; background: #eff1df; }
-.window::before { position: absolute; inset: 15% 13% auto auto; width: 33%; aspect-ratio: 1; border-radius: 50%; background: var(--peach); content: ""; }
-.window::after { position: absolute; inset: 0; content: ""; background: linear-gradient(90deg, transparent 48.5%, var(--art-ink) 48.5% 51.5%, transparent 51.5%), linear-gradient(transparent 66%, var(--art-ink) 66% 69%, transparent 69%); }
-.sill { position: absolute; bottom: 10%; left: 15%; width: 70%; height: 6%; display: flex; justify-content: space-around; align-items: end; border-bottom: 5px solid var(--art-ink); }
-.cup { position: relative; width: 17%; aspect-ratio: 1.2; border: 2px solid var(--art-ink); border-radius: 12% 12% 45% 45%; background: var(--peach); }
-.cup + .cup { background: var(--mint); }
-.cup::after { position: absolute; inset: 15% -24% auto auto; width: 28%; aspect-ratio: .75; content: ""; border: 2px solid var(--art-ink); border-left: 0; border-radius: 0 100% 100% 0; }
+.art picture { position: absolute; inset: 0; }
+.art img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 38%; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .art img { filter: brightness(.9) saturate(.95); } }
+:root[data-theme="dark"] .art img { filter: brightness(.9) saturate(.95); }
 .card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-card); min-width: 0; }
 .card-copy { padding: var(--space-4); display: grid; gap: var(--space-2); }
 

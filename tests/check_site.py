@@ -54,7 +54,7 @@ def is_journal(page):
 
 
 class _Collect(HTMLParser):
-    """Collects link[rel=alternate][hreflang], <html lang> and every href/src value."""
+    """Collects link[rel=alternate][hreflang], <html lang>, every href/src/srcset value and the preview art."""
 
     def __init__(self):
         super().__init__(convert_charrefs=True)
@@ -62,6 +62,10 @@ class _Collect(HTMLParser):
         self.html_lang = None  # value of <html lang>
         self.refs = []  # href/src values
         self.noindex = False  # <meta name="robots" content="...noindex...">
+        self.has_preview = False  # <article id="preview">
+        self._in_art = False
+        self.art_imgs = []  # attrs of <img> inside .art
+        self.art_types = []  # <source type> inside .art
 
     def handle_starttag(self, tag, attrs):
         a = {k.lower(): (v or "") for k, v in attrs}
@@ -70,10 +74,24 @@ class _Collect(HTMLParser):
         for key in ("href", "src"):
             if key in a:
                 self.refs.append(a[key].strip())
+        if "srcset" in a:
+            self.refs.extend(c.split()[0] for c in a["srcset"].split(",") if c.strip())
+        if tag == "img" and self._in_art:
+            self.art_imgs.append(a)
+        if tag == "source" and self._in_art:
+            self.art_types.append(a.get("type", ""))
+        if tag == "div" and "art" in a.get("class", "").split():
+            self._in_art = True
+        if tag == "article" and a.get("id") == "preview":
+            self.has_preview = True
         if tag == "meta" and a.get("name", "").lower() == "robots" and "noindex" in a.get("content", "").lower():
             self.noindex = True
         if tag == "link" and a.get("rel", "").lower() == "alternate" and "hreflang" in a:
             self.alternates.append((a["hreflang"].strip(), a.get("href", "").strip()))
+
+    def handle_endtag(self, tag):
+        if tag == "picture" and self._in_art:
+            self._in_art = False
 
 
 def site_origin(root):
@@ -230,6 +248,32 @@ def check_links(root, pages, errs):
                 errs.append("%s: broken link %r -> %s" % (page, ref, where))
 
 
+def check_preview_art(root, pages, errs):
+    """Landing preview cards carry one decorative, sized, cache-busted illustration (AVIF + WebP)."""
+    for page in pages:
+        parser = _Collect()
+        parser.feed((Path(root) / page).read_text(encoding="utf-8"))
+        if not parser.has_preview:
+            continue
+        if len(parser.art_imgs) != 1:
+            errs.append("%s: preview .art needs exactly one <img> (found %d)" % (page, len(parser.art_imgs)))
+            continue
+        img = parser.art_imgs[0]
+        if img.get("alt", None) != "":
+            errs.append("%s: preview art is decorative (aria-hidden) and needs alt=\"\"" % page)
+        if not (img.get("width") and img.get("height")):
+            errs.append("%s: preview art <img> needs width/height to avoid layout shift" % page)
+        elif not (img["width"].isdigit() and img["height"].isdigit()
+                  and int(img["width"]) * 10 == int(img["height"]) * 16):
+            errs.append("%s: preview art <img> width/height must be 16:10 like the .art box" % page)
+        if "image/avif" not in parser.art_types:
+            errs.append("%s: preview art needs an image/avif <source>" % page)
+        urls = [img.get("src", "")] + [c.split()[0] for c in img.get("srcset", "").split(",") if c.strip()]
+        for u in urls:
+            if "?v=" not in u:
+                errs.append("%s: preview art %r lacks a ?v= cache-buster" % (page, u))
+
+
 def run(root):
     root = Path(root).resolve()
     origin = site_origin(root)
@@ -240,6 +284,7 @@ def run(root):
     check_sitemap(root, origin, pages, errs)
     check_hreflang(root, origin, pages, lang_folders(root), errs)
     check_links(root, pages, errs)
+    check_preview_art(root, pages, errs)
     return errs, pages
 
 
