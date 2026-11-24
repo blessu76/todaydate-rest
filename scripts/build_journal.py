@@ -20,7 +20,7 @@ HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
 import journal_md  # noqa: E402
 
-SITE_CSS = "/assets/site.css?v=20261119"
+SITE_CSS = "/assets/site.css?v=20261124"
 JOURNAL_CSS = "/assets/journal.css?v=20261120"
 ICON = "/assets/icon.svg?v=20261119"
 E = html.escape

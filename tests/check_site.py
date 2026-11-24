@@ -63,9 +63,10 @@ class _Collect(HTMLParser):
         self.refs = []  # href/src values
         self.noindex = False  # <meta name="robots" content="...noindex...">
         self.has_preview = False  # <article id="preview">
-        self._in_art = False
+        self._preview_depth = 0  # open articles starting with article#preview
+        self._art_depth = 0  # open divs starting with div.art inside the preview
         self.art_imgs = []  # attrs of <img> inside .art
-        self.art_types = []  # <source type> inside .art
+        self.art_sources = []  # attrs of <source> inside .art
 
     def handle_starttag(self, tag, attrs):
         a = {k.lower(): (v or "") for k, v in attrs}
@@ -76,22 +77,30 @@ class _Collect(HTMLParser):
                 self.refs.append(a[key].strip())
         if "srcset" in a:
             self.refs.extend(c.split()[0] for c in a["srcset"].split(",") if c.strip())
-        if tag == "img" and self._in_art:
-            self.art_imgs.append(a)
-        if tag == "source" and self._in_art:
-            self.art_types.append(a.get("type", ""))
-        if tag == "div" and "art" in a.get("class", "").split():
-            self._in_art = True
         if tag == "article" and a.get("id") == "preview":
             self.has_preview = True
+            self._preview_depth += 1
+        elif tag == "article" and self._preview_depth:
+            self._preview_depth += 1
+        if tag == "div" and self._preview_depth and (self._art_depth or "art" in a.get("class", "").split()):
+            self._art_depth += 1
+        if self._art_depth:
+            if tag == "img":
+                self.art_imgs.append(a)
+            elif tag == "source":
+                self.art_sources.append(a)
         if tag == "meta" and a.get("name", "").lower() == "robots" and "noindex" in a.get("content", "").lower():
             self.noindex = True
         if tag == "link" and a.get("rel", "").lower() == "alternate" and "hreflang" in a:
             self.alternates.append((a["hreflang"].strip(), a.get("href", "").strip()))
 
     def handle_endtag(self, tag):
-        if tag == "picture" and self._in_art:
-            self._in_art = False
+        if tag == "div" and self._art_depth:
+            self._art_depth -= 1
+        if tag == "article" and self._preview_depth:
+            self._preview_depth -= 1
+            if not self._preview_depth:
+                self._art_depth = 0
 
 
 def site_origin(root):
@@ -266,7 +275,7 @@ def check_preview_art(root, pages, errs):
         elif not (img["width"].isdigit() and img["height"].isdigit()
                   and int(img["width"]) * 10 == int(img["height"]) * 16):
             errs.append("%s: preview art <img> width/height must be 16:10 like the .art box" % page)
-        if "image/avif" not in parser.art_types:
+        if not any(source.get("type") == "image/avif" for source in parser.art_sources):
             errs.append("%s: preview art needs an image/avif <source>" % page)
         urls = [img.get("src", "")] + [c.split()[0] for c in img.get("srcset", "").split(",") if c.strip()]
         for u in urls:

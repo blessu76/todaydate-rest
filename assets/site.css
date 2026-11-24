@@ -8,8 +8,6 @@
   --action: #204939;
   --on-action: #fff;
   --mint: #dae9d6;
-  --peach: #f4c79f;
-  --art-ink: #204939;
   --font: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   --text-small: .875rem;
   --text-body: 1rem;
@@ -35,7 +33,6 @@
     --action: #cae8ce;
     --on-action: #172c22;
     --mint: #b8d0bb;
-    --peach: #e5b289;
   }
 }
 :root[data-theme="dark"] {
@@ -48,7 +45,6 @@
   --action: #cae8ce;
   --on-action: #172c22;
   --mint: #b8d0bb;
-  --peach: #e5b289;
 }
 
 *, *::before, *::after { box-sizing: border-box; }

@@ -1,5 +1,6 @@
 """Journal helpers: front matter, the Markdown subset, and the list/article builder. Stdlib only."""
 import os
+import re
 import sys
 import tempfile
 import unittest
@@ -8,6 +9,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "scripts"))
 import build_journal  # noqa: E402
+import check_site  # noqa: E402
 import journal_md  # noqa: E402
 
 
@@ -47,6 +49,15 @@ class RenderTest(unittest.TestCase):
             self.assertIn("k", out)
         for good in ("https://e.x/", "http://e.x/", "mailto:a@e.x", "/journal/", "../x/", "#top"):
             self.assertIn(f'href="{good}"', journal_md.render(f"[k]({good})"), good)
+
+
+class StylesheetTest(unittest.TestCase):
+    def test_published_pages_match_the_journal_stylesheet_version(self):
+        for page in [*check_site.iter_pages(ROOT), "404.html"]:
+            with self.subTest(page=page):
+                html = (ROOT / page).read_text(encoding="utf-8")
+                links = re.findall(r'href="(/assets/site\.css(?:\?[^"]*)?)"', html)
+                self.assertEqual(links, [build_journal.SITE_CSS])
 
 
 def write_post(root, slug, lang, title, date, time, langs_present=None):
