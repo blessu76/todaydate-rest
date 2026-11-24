@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ko" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>광고 없음, 기록은 기기 안에 · 오늘 어때</title>
+<meta name="description" content="오늘 어때에는 광고가 없고, 장면의 결과를 바꾸는 유료 기능도 없다. 플레이 기록은 게임을 하는 기기 안에 남는다.">
+<meta name="theme-color" content="#f7f5ed" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#131e19" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="article">
+<meta property="og:title" content="광고 없음, 기록은 기기 안에 · 오늘 어때">
+<meta property="og:description" content="오늘 어때에는 광고가 없고, 장면의 결과를 바꾸는 유료 기능도 없다. 플레이 기록은 게임을 하는 기기 안에 남는다.">
+<meta property="og:url" content="https://todaydate.ipe.rest/ko/journal/no-ads-on-device/">
+<link rel="canonical" href="https://todaydate.ipe.rest/ko/journal/no-ads-on-device/">
+<link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/journal/no-ads-on-device/">
+<link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/journal/no-ads-on-device/">
+<link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/journal/no-ads-on-device/">
+<link rel="icon" href="/assets/icon.svg?v=20261119" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/site.css?v=20261119">
+<link rel="stylesheet" href="/assets/journal.css?v=20261120">
+<script>
+try { var s = localStorage.getItem('todaydate-theme'); if (s === 'light' || s === 'dark') document.documentElement.dataset.theme = s; } catch (e) {}
+</script>
+</head>
+<body>
+<header>
+  <div class="wrap bar">
+    <a class="wordmark" href="/ko/">오늘 어때</a>
+    <div class="bar-end">
+      <a class="button secondary" href="/ko/journal/" aria-current="page">저널</a>
+      <a class="button secondary" href="/journal/no-ads-on-device/" hreflang="en" lang="en">English</a>
+      <button type="button" class="button secondary theme-toggle" data-theme-toggle aria-label="Switch dark/light">테마</button>
+    </div>
+  </div>
+</header>
+<main id="main" class="wrap journal-post">
+  <p class="eyebrow"><a href="/ko/journal/">저널</a> · <time datetime="2026-11-24">2026-11-24</time></p>
+  <h1>광고 없음, 기록은 기기 안에</h1>
+  <p class="muted lead">오늘 어때에는 광고가 없고, 장면의 결과를 바꾸는 유료 기능도 없다. 플레이 기록은 게임을 하는 기기 안에 남는다.</p>
+  <div class="prose">
+<p>오늘 어때에는 광고가 없다. 판과 판 사이에 광고를 띄우지 않고, 광고를 보면 보상을 주는 일도 없다. 힌트, 되감기, 재시도도 팔지 않는다. 판의 흐름을 바꾸기 때문이다.</p>
+<h2>살 수 있는 것</h2>
+<p>유일한 구매는 장면 팩이다. 팩은 장면을 더할 뿐, 규칙·점수·엔딩은 바꾸지 않는다.</p>
+<h2>기록이 남는 곳</h2>
+<p>도감, 가진 장면 팩, 진행 상황은 게임을 하는 기기 안에 저장된다. 플레이 기록의 사본을 서버에 두지 않는다. 앱을 지우면 그 기록도 함께 사라진다.</p>
+<h2>이렇게 정한 이유</h2>
+<p>데이트 게임이 인터넷에서 플레이어를 따라다니면 안 된다고 봤다. 기록을 기기에 두는 편이 단순하고, 지켜야 할 것도 적다. 플레이어를 지켜봐야 돈이 되는 큰 게임보다, 작고 분명한 게임을 택했다.</p>
+  </div>
+  <p><a class="back" href="/ko/journal/">← 저널</a></p>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="muted">오늘 어때 · ipe Studio</p>
+    <nav aria-label="Support"><ul class="lang-list"><li><a href="/ko/journal/">저널</a></li><li><a href="/ko/privacy/">개인정보 처리방침</a></li><li><a href="/ko/terms/">이용약관</a></li><li><a href="/ko/support/">지원</a></li></ul></nav>
+  </div>
+</footer>
+<script>
+(function () {
+  var b = document.querySelector('[data-theme-toggle]');
+  if (!b) return;
+  b.addEventListener('click', function () {
+    var r = document.documentElement;
+    var dark = r.dataset.theme ? r.dataset.theme === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
+    var next = dark ? 'light' : 'dark';
+    r.dataset.theme = next;
+    try { localStorage.setItem('todaydate-theme', next); } catch (e) {}
+  });
+})();
+</script>
+</body>
+</html>
