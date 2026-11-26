@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="zh-Hant" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>開發日誌 · 오늘 어때</title>
+<meta name="description" content="開發日誌 · 오늘 어때">
+<meta name="theme-color" content="#f7f5ed" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#131e19" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:title" content="開發日誌 · 오늘 어때">
+<meta property="og:description" content="開發日誌 · 오늘 어때">
+<meta property="og:url" content="https://todaydate.ipe.rest/zh-hant/journal/">
+<link rel="canonical" href="https://todaydate.ipe.rest/zh-hant/journal/">
+<link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/journal/">
+<link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/journal/">
+<link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/journal/">
+<link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/journal/">
+<link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/journal/">
+<link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/journal/">
+<link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/journal/">
+<link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/journal/">
+<link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/journal/">
+<link rel="alternate" hreflang="th" href="https://todaydate.ipe.rest/th/journal/">
+<link rel="alternate" hreflang="vi" href="https://todaydate.ipe.rest/vi/journal/">
+<link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/journal/">
+<link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/journal/">
+<link rel="icon" href="/assets/icon.svg?v=20261119" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/site.css?v=20261124">
+<link rel="stylesheet" href="/assets/journal.css?v=20261126">
+<script>
+try { var s = localStorage.getItem('todaydate-theme'); if (s === 'light' || s === 'dark') document.documentElement.dataset.theme = s; } catch (e) {}
+</script>
+</head>
+<body>
+<header>
+  <div class="wrap bar">
+    <a class="wordmark" href="/zh-hant/">오늘 어때</a>
+    <div class="bar-end">
+      <a class="button secondary" href="/zh-hant/journal/">開發日誌</a>
+      <button type="button" class="button secondary theme-toggle" data-theme-toggle>主題</button>
+    </div>
+  </div>
+</header>
+<main id="main" class="wrap journal">
+  <h1>開發日誌</h1>
+  
+  <ul class="lang-list journal-languages"><li><a href="/journal/" hreflang="en" lang="en">English</a></li><li><a href="/ko/journal/" hreflang="ko" lang="ko">한국어</a></li><li><a href="/ja/journal/" hreflang="ja" lang="ja">日本語</a></li><li><a href="/es/journal/" hreflang="es" lang="es">Español</a></li><li><a href="/pt-br/journal/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a></li><li><a href="/fr/journal/" hreflang="fr" lang="fr">Français</a></li><li><a href="/de/journal/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/id/journal/" hreflang="id" lang="id">Bahasa Indonesia</a></li><li><a href="/th/journal/" hreflang="th" lang="th">ไทย</a></li><li><a href="/vi/journal/" hreflang="vi" lang="vi">Tiếng Việt</a></li><li><a href="/tr/journal/" hreflang="tr" lang="tr">Türkçe</a></li></ul>
+  <ul class="jlist"><li class="jitem"><p class="muted"><time datetime="2026-11-26">2026-11-26</time></p><h2><a href="/zh-hant/journal/what-points-unlock/">點數能解鎖什麼？</a></h2><p class="muted">基本遊戲免費。點數可用來解鎖場景包和角色專屬故事。</p></li><li class="jitem"><p class="muted"><time datetime="2026-11-25">2026-11-25</time></p><h2><a href="/zh-hant/journal/three-choices/">約會中的回應</a></h2><p class="muted">選一種回應，看看場景會怎麼發展。</p></li></ul>
+</main>
+<footer>
+  <div class="wrap">
+    <p class="muted">오늘 어때 · ipe Studio</p>
+    <nav aria-label="支援"><ul class="lang-list"><li><a href="/zh-hant/journal/">開發日誌</a></li><li><a href="/zh-hant/privacy/">隱私權政策</a></li><li><a href="/zh-hant/terms/">使用條款</a></li><li><a href="/zh-hant/support/">支援</a></li></ul></nav>
+  </div>
+</footer>
+<script>
+(function () {
+  var b = document.querySelector('[data-theme-toggle]');
+  if (!b) return;
+  b.addEventListener('click', function () {
+    var r = document.documentElement;
+    var dark = r.dataset.theme ? r.dataset.theme === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
+    var next = dark ? 'light' : 'dark';
+    r.dataset.theme = next;
+    try { localStorage.setItem('todaydate-theme', next); } catch (e) {}
+  });
+})();
+</script>
+</body>
+</html>

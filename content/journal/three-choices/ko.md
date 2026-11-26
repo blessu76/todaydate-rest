@@ -5,6 +5,8 @@ description: 답을 하나 골라 장면이 어떻게 이어지는지 살펴봅�
 category: product
 translation_of: en
 lang: ko
+copy_review: iris
+copy_review_date: 2026-11-27
 ---
 
 「오늘 어때」에서는 데이트 장면의 상황을 읽고, 세 가지 또는 네 가지 답 중 하나를 고릅니다. 고른 답에 따라 상대의 반응이 달라질 수 있습니다.

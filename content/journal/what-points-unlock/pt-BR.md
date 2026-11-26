@@ -5,10 +5,12 @@ description: O jogo básico é gratuito. Com pontos, você pode abrir pacotes de
 category: product
 translation_of: en
 lang: pt-BR
+copy_review: iris
+copy_review_date: 2026-11-27
 ---
 
 오늘 어때 não tem anúncios. No jogo básico, você pode escolher respostas e ler como as cenas continuam.
 
 ## Extras opcionais
 
-Os pontos servem para abrir pacotes de cenas e histórias de personagens. Ao abrir o aplicativo pela primeira vez, você recebe pontos suficientes para um pacote de cenas. Se quiser mais, pode comprar pontos no aplicativo.
+Os pontos servem para abrir pacotes de cenas e histórias de personagens. Ao abrir o aplicativo pela primeira vez, você recebe pontos suficientes para um pacote de cenas. Quando houver pacotes de pontos disponíveis na loja, você poderá comprar mais pontos no aplicativo.

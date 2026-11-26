@@ -5,6 +5,8 @@ description: Bir yanıt seç ve sahnenin nasıl devam ettiğini gör.
 category: product
 translation_of: en
 lang: tr
+copy_review: iris
+copy_review_date: 2026-11-27
 ---
 
 오늘 어때’de önce buluşmada neler olduğunu okur, sonra üç ya da dört yanıttan birini seçersin. Seçimin, karşındaki kişinin tepkisini değiştirebilir.

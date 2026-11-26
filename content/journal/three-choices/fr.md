@@ -5,6 +5,8 @@ description: Choisissez une réponse et découvrez la suite de la scène.
 category: product
 translation_of: en
 lang: fr
+copy_review: iris
+copy_review_date: 2026-11-27
 ---
 
 Dans 오늘 어때, vous lisez d’abord la situation, puis vous choisissez entre trois ou quatre réponses. Votre choix peut changer la réaction de l’autre personne.

@@ -5,6 +5,8 @@ description: 選一種回應，看看場景會怎麼發展。
 category: product
 translation_of: en
 lang: zh-Hant
+copy_review: iris
+copy_review_date: 2026-11-27
 ---
 
 在《오늘 어때》中，你會先讀到約會時的情境，再從三到四種回應中選一種。你的回應可能影響對方的反應。

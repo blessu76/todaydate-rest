@@ -904,17 +904,615 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/journal/thirty-scenes/"/>
   </url>
   <url>
+    <loc>https://todaydate.ipe.rest/journal/three-choices/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://todaydate.ipe.rest/th/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://todaydate.ipe.rest/vi/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/journal/three-choices/"/>
+  </url>
+  <url>
+    <loc>https://todaydate.ipe.rest/ko/journal/three-choices/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://todaydate.ipe.rest/th/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://todaydate.ipe.rest/vi/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/journal/three-choices/"/>
+  </url>
+  <url>
+    <loc>https://todaydate.ipe.rest/ja/journal/three-choices/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://todaydate.ipe.rest/th/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://todaydate.ipe.rest/vi/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/journal/three-choices/"/>
+  </url>
+  <url>
+    <loc>https://todaydate.ipe.rest/zh-hant/journal/three-choices/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://todaydate.ipe.rest/th/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://todaydate.ipe.rest/vi/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/journal/three-choices/"/>
+  </url>
+  <url>
+    <loc>https://todaydate.ipe.rest/es/journal/three-choices/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://todaydate.ipe.rest/th/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://todaydate.ipe.rest/vi/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/journal/three-choices/"/>
+  </url>
+  <url>
+    <loc>https://todaydate.ipe.rest/pt-br/journal/three-choices/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://todaydate.ipe.rest/th/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://todaydate.ipe.rest/vi/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/journal/three-choices/"/>
+  </url>
+  <url>
+    <loc>https://todaydate.ipe.rest/fr/journal/three-choices/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://todaydate.ipe.rest/th/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://todaydate.ipe.rest/vi/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/journal/three-choices/"/>
+  </url>
+  <url>
+    <loc>https://todaydate.ipe.rest/de/journal/three-choices/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://todaydate.ipe.rest/th/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://todaydate.ipe.rest/vi/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/journal/three-choices/"/>
+  </url>
+  <url>
+    <loc>https://todaydate.ipe.rest/id/journal/three-choices/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://todaydate.ipe.rest/th/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://todaydate.ipe.rest/vi/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/journal/three-choices/"/>
+  </url>
+  <url>
+    <loc>https://todaydate.ipe.rest/th/journal/three-choices/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://todaydate.ipe.rest/th/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://todaydate.ipe.rest/vi/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/journal/three-choices/"/>
+  </url>
+  <url>
+    <loc>https://todaydate.ipe.rest/vi/journal/three-choices/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://todaydate.ipe.rest/th/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://todaydate.ipe.rest/vi/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/journal/three-choices/"/>
+  </url>
+  <url>
+    <loc>https://todaydate.ipe.rest/tr/journal/three-choices/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://todaydate.ipe.rest/th/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://todaydate.ipe.rest/vi/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/journal/three-choices/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/journal/three-choices/"/>
+  </url>
+  <url>
+    <loc>https://todaydate.ipe.rest/journal/what-points-unlock/</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://todaydate.ipe.rest/th/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://todaydate.ipe.rest/vi/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/journal/what-points-unlock/"/>
+  </url>
+  <url>
+    <loc>https://todaydate.ipe.rest/ko/journal/what-points-unlock/</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://todaydate.ipe.rest/th/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://todaydate.ipe.rest/vi/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/journal/what-points-unlock/"/>
+  </url>
+  <url>
+    <loc>https://todaydate.ipe.rest/ja/journal/what-points-unlock/</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://todaydate.ipe.rest/th/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://todaydate.ipe.rest/vi/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/journal/what-points-unlock/"/>
+  </url>
+  <url>
+    <loc>https://todaydate.ipe.rest/zh-hant/journal/what-points-unlock/</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://todaydate.ipe.rest/th/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://todaydate.ipe.rest/vi/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/journal/what-points-unlock/"/>
+  </url>
+  <url>
+    <loc>https://todaydate.ipe.rest/es/journal/what-points-unlock/</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://todaydate.ipe.rest/th/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://todaydate.ipe.rest/vi/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/journal/what-points-unlock/"/>
+  </url>
+  <url>
+    <loc>https://todaydate.ipe.rest/pt-br/journal/what-points-unlock/</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://todaydate.ipe.rest/th/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://todaydate.ipe.rest/vi/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/journal/what-points-unlock/"/>
+  </url>
+  <url>
+    <loc>https://todaydate.ipe.rest/fr/journal/what-points-unlock/</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://todaydate.ipe.rest/th/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://todaydate.ipe.rest/vi/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/journal/what-points-unlock/"/>
+  </url>
+  <url>
+    <loc>https://todaydate.ipe.rest/de/journal/what-points-unlock/</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://todaydate.ipe.rest/th/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://todaydate.ipe.rest/vi/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/journal/what-points-unlock/"/>
+  </url>
+  <url>
+    <loc>https://todaydate.ipe.rest/id/journal/what-points-unlock/</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://todaydate.ipe.rest/th/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://todaydate.ipe.rest/vi/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/journal/what-points-unlock/"/>
+  </url>
+  <url>
+    <loc>https://todaydate.ipe.rest/th/journal/what-points-unlock/</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://todaydate.ipe.rest/th/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://todaydate.ipe.rest/vi/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/journal/what-points-unlock/"/>
+  </url>
+  <url>
+    <loc>https://todaydate.ipe.rest/vi/journal/what-points-unlock/</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://todaydate.ipe.rest/th/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://todaydate.ipe.rest/vi/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/journal/what-points-unlock/"/>
+  </url>
+  <url>
+    <loc>https://todaydate.ipe.rest/tr/journal/what-points-unlock/</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://todaydate.ipe.rest/th/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://todaydate.ipe.rest/vi/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/journal/what-points-unlock/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/journal/what-points-unlock/"/>
+  </url>
+  <url>
     <loc>https://todaydate.ipe.rest/journal/</loc>
-    <lastmod>2026-11-24</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/journal/"/>
     <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/journal/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/journal/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/journal/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/journal/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/journal/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/journal/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/journal/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/journal/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://todaydate.ipe.rest/th/journal/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://todaydate.ipe.rest/vi/journal/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/journal/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/journal/"/>
   </url>
   <url>
     <loc>https://todaydate.ipe.rest/ko/journal/</loc>
-    <lastmod>2026-11-24</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/journal/"/>
     <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/journal/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/journal/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/journal/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/journal/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/journal/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/journal/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/journal/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/journal/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://todaydate.ipe.rest/th/journal/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://todaydate.ipe.rest/vi/journal/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/journal/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/journal/"/>
+  </url>
+  <url>
+    <loc>https://todaydate.ipe.rest/ja/journal/</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/journal/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/journal/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/journal/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/journal/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/journal/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/journal/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/journal/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/journal/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/journal/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://todaydate.ipe.rest/th/journal/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://todaydate.ipe.rest/vi/journal/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/journal/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/journal/"/>
+  </url>
+  <url>
+    <loc>https://todaydate.ipe.rest/zh-hant/journal/</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/journal/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/journal/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/journal/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/journal/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/journal/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/journal/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/journal/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/journal/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/journal/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://todaydate.ipe.rest/th/journal/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://todaydate.ipe.rest/vi/journal/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/journal/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/journal/"/>
+  </url>
+  <url>
+    <loc>https://todaydate.ipe.rest/es/journal/</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/journal/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/journal/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/journal/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/journal/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/journal/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/journal/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/journal/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/journal/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/journal/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://todaydate.ipe.rest/th/journal/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://todaydate.ipe.rest/vi/journal/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/journal/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/journal/"/>
+  </url>
+  <url>
+    <loc>https://todaydate.ipe.rest/pt-br/journal/</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/journal/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/journal/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/journal/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/journal/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/journal/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/journal/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/journal/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/journal/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/journal/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://todaydate.ipe.rest/th/journal/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://todaydate.ipe.rest/vi/journal/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/journal/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/journal/"/>
+  </url>
+  <url>
+    <loc>https://todaydate.ipe.rest/fr/journal/</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/journal/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/journal/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/journal/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/journal/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/journal/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/journal/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/journal/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/journal/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/journal/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://todaydate.ipe.rest/th/journal/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://todaydate.ipe.rest/vi/journal/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/journal/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/journal/"/>
+  </url>
+  <url>
+    <loc>https://todaydate.ipe.rest/de/journal/</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/journal/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/journal/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/journal/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/journal/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/journal/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/journal/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/journal/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/journal/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/journal/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://todaydate.ipe.rest/th/journal/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://todaydate.ipe.rest/vi/journal/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/journal/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/journal/"/>
+  </url>
+  <url>
+    <loc>https://todaydate.ipe.rest/id/journal/</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/journal/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/journal/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/journal/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/journal/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/journal/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/journal/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/journal/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/journal/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/journal/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://todaydate.ipe.rest/th/journal/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://todaydate.ipe.rest/vi/journal/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/journal/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/journal/"/>
+  </url>
+  <url>
+    <loc>https://todaydate.ipe.rest/th/journal/</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/journal/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/journal/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/journal/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/journal/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/journal/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/journal/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/journal/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/journal/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/journal/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://todaydate.ipe.rest/th/journal/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://todaydate.ipe.rest/vi/journal/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/journal/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/journal/"/>
+  </url>
+  <url>
+    <loc>https://todaydate.ipe.rest/vi/journal/</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/journal/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/journal/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/journal/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/journal/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/journal/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/journal/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/journal/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/journal/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/journal/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://todaydate.ipe.rest/th/journal/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://todaydate.ipe.rest/vi/journal/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/journal/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/journal/"/>
+  </url>
+  <url>
+    <loc>https://todaydate.ipe.rest/tr/journal/</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://todaydate.ipe.rest/journal/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://todaydate.ipe.rest/ko/journal/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://todaydate.ipe.rest/ja/journal/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://todaydate.ipe.rest/zh-hant/journal/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://todaydate.ipe.rest/es/journal/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://todaydate.ipe.rest/pt-br/journal/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://todaydate.ipe.rest/fr/journal/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://todaydate.ipe.rest/de/journal/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://todaydate.ipe.rest/id/journal/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://todaydate.ipe.rest/th/journal/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://todaydate.ipe.rest/vi/journal/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://todaydate.ipe.rest/tr/journal/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://todaydate.ipe.rest/journal/"/>
   </url>
 </urlset>

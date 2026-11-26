@@ -5,6 +5,8 @@ description: Chọn một câu trả lời và xem cảnh tiếp diễn ra sao.
 category: product
 translation_of: en
 lang: vi
+copy_review: iris
+copy_review_date: 2026-11-27
 ---
 
 Trong 오늘 어때, bạn đọc tình huống trong buổi hẹn rồi chọn một trong ba hoặc bốn câu trả lời. Lựa chọn đó có thể thay đổi cách người kia phản ứng.

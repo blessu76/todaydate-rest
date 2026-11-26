@@ -5,6 +5,8 @@ description: 返事を一つ選んで、場面の続きを読んでみましょ�
 category: product
 translation_of: en
 lang: ja
+copy_review: iris
+copy_review_date: 2026-11-27
 ---
 
 『오늘 어때』では、デートの場面を読んで、三つか四つの返事から一つを選びます。選んだ返事によって、相手の反応が変わることがあります。

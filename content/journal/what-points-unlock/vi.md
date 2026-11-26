@@ -5,10 +5,12 @@ description: Trò chơi cơ bản miễn phí. Bạn có thể dùng điểm đ�
 category: product
 translation_of: en
 lang: vi
+copy_review: iris
+copy_review_date: 2026-11-27
 ---
 
 오늘 어때 không có quảng cáo. Bạn có thể bắt đầu miễn phí, chọn câu trả lời và đọc tiếp diễn biến của cảnh.
 
 ## Nội dung bổ sung tùy chọn
 
-Bạn có thể dùng điểm để mở gói cảnh hoặc câu chuyện riêng của nhân vật. Lần đầu mở ứng dụng, bạn nhận đủ điểm để mở một gói cảnh. Nếu muốn có thêm điểm, bạn có thể mua trong ứng dụng.
+Bạn có thể dùng điểm để mở gói cảnh hoặc câu chuyện riêng của nhân vật. Lần đầu mở ứng dụng, bạn nhận đủ điểm để mở một gói cảnh. Khi cửa hàng ứng dụng có bán gói điểm, bạn có thể mua thêm điểm trong ứng dụng.

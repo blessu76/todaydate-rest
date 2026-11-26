@@ -5,6 +5,8 @@ description: Wähle eine Antwort und lies, wie die Szene weitergeht.
 category: product
 translation_of: en
 lang: de
+copy_review: iris
+copy_review_date: 2026-11-27
 ---
 
 In 오늘 어때 liest du zuerst, was beim Date gerade passiert. Dann wählst du eine von drei oder vier Antworten. Deine Wahl kann ändern, wie dein Gegenüber reagiert.

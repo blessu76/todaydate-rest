@@ -5,6 +5,8 @@ description: Pilih satu jawaban dan lihat bagaimana adegannya berlanjut.
 category: product
 translation_of: en
 lang: id
+copy_review: iris
+copy_review_date: 2026-11-27
 ---
 
 Dalam 오늘 어때, kamu membaca situasi kencannya, lalu memilih satu dari tiga atau empat jawaban. Pilihanmu bisa mengubah reaksi teman kencanmu.

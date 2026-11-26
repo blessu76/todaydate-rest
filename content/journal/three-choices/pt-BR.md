@@ -5,6 +5,8 @@ description: Escolha uma resposta e veja como a cena continua.
 category: product
 translation_of: en
 lang: pt-BR
+copy_review: iris
+copy_review_date: 2026-11-27
 ---
 
 Em 오늘 어때, você lê o que está acontecendo no encontro e escolhe entre três ou quatro respostas. Sua escolha pode mudar a reação da outra pessoa.
