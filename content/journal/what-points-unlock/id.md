@@ -1,14 +1,14 @@
 ---
 title: Apa yang bisa dibuka dengan poin?
 date: 2026-11-26
-description: Gim dasar gratis. Poin bisa digunakan untuk membuka paket adegan dan dekorasi tambahan.
+description: Gim dasarnya gratis. Poin bisa dipakai untuk membuka paket adegan dan cerita khusus karakter.
 category: product
 translation_of: en
 lang: id
 ---
 
-How’s Today tidak menampilkan iklan. Kamu bisa mulai bermain gratis, memilih jawaban, dan membaca kelanjutan adegannya.
+오늘 어때 tidak menampilkan iklan. Kamu bisa mulai bermain gratis, memilih jawaban, dan membaca kelanjutan adegannya.
 
 ## Tambahan sesuai pilihanmu
 
-Kalau ingin lebih banyak adegan atau dekorasi, kamu bisa membukanya dengan poin yang dibeli di aplikasi. Kamu tetap bisa memainkan gim dasar tanpa membeli apa pun.
+Kamu bisa memakai poin untuk membuka paket adegan atau cerita khusus karakter. Saat pertama kali membuka aplikasi, kamu mendapat cukup poin untuk membuka satu paket adegan. Kalau perlu lebih banyak, kamu bisa membelinya di aplikasi.

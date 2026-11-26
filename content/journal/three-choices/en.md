@@ -1,13 +1,13 @@
 ---
-title: Three choices on a date
+title: Choosing a reply on a date
 date: 2026-11-25
-description: Pick one of three replies and see how the scene unfolds.
+description: Pick a reply and see how the scene unfolds.
 category: product
 translation_of: ko
 lang: en
 ---
 
-In How’s Today, a date scene presents a moment and three ways to respond. Pick one, then read what happens next. The response can change how the scene unfolds.
+In 오늘 어때, each date scene gives you a moment to read and three or four ways to respond. Your reply can change how the other person reacts.
 
 ## Start with the situation
 

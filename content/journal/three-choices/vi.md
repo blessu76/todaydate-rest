@@ -1,13 +1,13 @@
 ---
-title: Ba cách trả lời trong buổi hẹn
+title: Chọn câu trả lời trong buổi hẹn
 date: 2026-11-25
-description: Chọn một trong ba câu trả lời và xem câu chuyện tiếp diễn ra sao.
+description: Chọn một câu trả lời và xem cảnh tiếp diễn ra sao.
 category: product
 translation_of: en
 lang: vi
 ---
 
-Trong How’s Today, mỗi cảnh hẹn hò đưa ra một tình huống và ba cách trả lời. Hãy chọn một câu rồi đọc tiếp để biết chuyện gì xảy ra. Câu trả lời có thể làm thay đổi diễn biến của cảnh.
+Trong 오늘 어때, bạn đọc tình huống trong buổi hẹn rồi chọn một trong ba hoặc bốn câu trả lời. Lựa chọn đó có thể thay đổi cách người kia phản ứng.
 
 ## Đọc tình huống trước
 

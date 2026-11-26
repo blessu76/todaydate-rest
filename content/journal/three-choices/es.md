@@ -1,13 +1,13 @@
 ---
-title: Tres respuestas en una cita
+title: Elegir una respuesta en una cita
 date: 2026-11-25
-description: Elige una de las tres respuestas y mira cómo continúa la escena.
+description: Elige una respuesta y mira cómo continúa la escena.
 category: product
 translation_of: en
 lang: es
 ---
 
-En How’s Today, cada escena de una cita plantea una situación y tres formas de responder. Elige una y lee qué pasa después. Tu respuesta puede cambiar el rumbo de la escena.
+En 오늘 어때, primero lees lo que pasa en la cita y luego eliges entre tres o cuatro respuestas. Tu elección puede cambiar la reacción de la otra persona.
 
 ## Lee primero la situación
 

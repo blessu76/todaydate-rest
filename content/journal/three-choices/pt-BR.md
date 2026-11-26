@@ -1,13 +1,13 @@
 ---
-title: Três respostas em um encontro
+title: Como responder em um encontro
 date: 2026-11-25
-description: Escolha uma das três respostas e veja como a cena continua.
+description: Escolha uma resposta e veja como a cena continua.
 category: product
 translation_of: en
 lang: pt-BR
 ---
 
-Em How’s Today, cada cena de encontro apresenta uma situação e três formas de responder. Escolha uma e leia o que acontece em seguida. Sua resposta pode mudar o rumo da cena.
+Em 오늘 어때, você lê o que está acontecendo no encontro e escolhe entre três ou quatro respostas. Sua escolha pode mudar a reação da outra pessoa.
 
 ## Leia a situação primeiro
 

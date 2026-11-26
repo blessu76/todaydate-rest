@@ -1,14 +1,14 @@
 ---
 title: Qué desbloquean los puntos
 date: 2026-11-26
-description: El juego base es gratuito. Los puntos sirven para desbloquear paquetes de escenas y adornos.
+description: El juego base es gratuito. Con los puntos puedes abrir paquetes de escenas e historias de personajes.
 category: product
 translation_of: en
 lang: es
 ---
 
-How’s Today no tiene anuncios. Puedes empezar gratis, elegir respuestas y leer cómo sigue cada escena.
+오늘 어때 no tiene anuncios. Puedes empezar gratis, elegir respuestas y leer cómo sigue cada escena.
 
 ## Contenido adicional opcional
 
-Si quieres más escenas o adornos, puedes desbloquearlos con puntos que compres en la aplicación. Puedes jugar al juego base sin comprar nada.
+Los puntos sirven para abrir paquetes de escenas e historias de personajes. Al abrir la aplicación por primera vez, recibes puntos suficientes para un paquete de escenas. Si quieres más, puedes comprarlos en la aplicación.

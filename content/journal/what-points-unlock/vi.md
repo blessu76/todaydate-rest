@@ -1,14 +1,14 @@
 ---
 title: Điểm dùng để mở khóa gì?
 date: 2026-11-26
-description: Trò chơi cơ bản miễn phí. Bạn có thể dùng điểm để mở khóa gói cảnh và đồ trang trí bổ sung.
+description: Trò chơi cơ bản miễn phí. Bạn có thể dùng điểm để mở gói cảnh và câu chuyện riêng của nhân vật.
 category: product
 translation_of: en
 lang: vi
 ---
 
-How’s Today không có quảng cáo. Bạn có thể bắt đầu miễn phí, chọn câu trả lời và đọc tiếp diễn biến của cảnh.
+오늘 어때 không có quảng cáo. Bạn có thể bắt đầu miễn phí, chọn câu trả lời và đọc tiếp diễn biến của cảnh.
 
 ## Nội dung bổ sung tùy chọn
 
-Nếu muốn có thêm cảnh hoặc đồ trang trí, bạn có thể mở khóa bằng điểm mua trong ứng dụng. Bạn vẫn chơi được trò chơi cơ bản mà không cần mua gì.
+Bạn có thể dùng điểm để mở gói cảnh hoặc câu chuyện riêng của nhân vật. Lần đầu mở ứng dụng, bạn nhận đủ điểm để mở một gói cảnh. Nếu muốn có thêm điểm, bạn có thể mua trong ứng dụng.

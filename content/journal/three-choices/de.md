@@ -1,13 +1,13 @@
 ---
-title: Drei Antworten bei einem Date
+title: Eine Antwort beim Date wählen
 date: 2026-11-25
-description: Wähle eine von drei Antworten und lies, wie die Szene weitergeht.
+description: Wähle eine Antwort und lies, wie die Szene weitergeht.
 category: product
 translation_of: en
 lang: de
 ---
 
-In How’s Today stellt jede Date-Szene eine Situation und drei mögliche Antworten vor. Wähle eine Antwort und lies, was als Nächstes passiert. Je nach Antwort kann sich die Szene anders entwickeln.
+In 오늘 어때 liest du zuerst, was beim Date gerade passiert. Dann wählst du eine von drei oder vier Antworten. Deine Wahl kann ändern, wie dein Gegenüber reagiert.
 
 ## Lies zuerst die Situation
 

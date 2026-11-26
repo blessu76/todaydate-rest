@@ -1,13 +1,13 @@
 ---
-title: Trois réponses lors d’un rendez-vous
+title: Choisir sa réponse lors d’un rendez-vous
 date: 2026-11-25
-description: Choisissez une des trois réponses et découvrez la suite de la scène.
+description: Choisissez une réponse et découvrez la suite de la scène.
 category: product
 translation_of: en
 lang: fr
 ---
 
-Dans How’s Today, chaque scène de rendez-vous présente une situation et trois façons de répondre. Choisissez-en une, puis lisez la suite. Votre réponse peut changer le cours de la scène.
+Dans 오늘 어때, vous lisez d’abord la situation, puis vous choisissez entre trois ou quatre réponses. Votre choix peut changer la réaction de l’autre personne.
 
 ## Lire d’abord la situation
 

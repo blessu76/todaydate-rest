@@ -1,13 +1,13 @@
 ---
-title: Tiga jawaban saat berkencan
+title: Memilih jawaban saat berkencan
 date: 2026-11-25
-description: Pilih satu dari tiga jawaban dan lihat bagaimana adegannya berlanjut.
+description: Pilih satu jawaban dan lihat bagaimana adegannya berlanjut.
 category: product
 translation_of: en
 lang: id
 ---
 
-Dalam How’s Today, setiap adegan kencan menyajikan sebuah situasi dan tiga cara untuk merespons. Pilih satu, lalu baca apa yang terjadi berikutnya. Jawabanmu bisa mengubah alur adegan.
+Dalam 오늘 어때, kamu membaca situasi kencannya, lalu memilih satu dari tiga atau empat jawaban. Pilihanmu bisa mengubah reaksi teman kencanmu.
 
 ## Baca situasinya dulu
 
