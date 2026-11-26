@@ -220,14 +220,17 @@ def sort_key(item):
     return (meta["date"], meta.get("time", ""), slug)
 
 
-def build(root, preview=False):
+def build(root, preview=False, warn=None):
     """Return (files {repo-relative path: html}, entries [(loc, lastmod, lang, slug)]).
-    Each list page is one entry (slug None); lastmod is the newest post's date."""
+    Each list page is one entry (slug None); lastmod is the newest post's date.
+    A non-legacy article that is not ready (an edition or its Iris copy review missing) is left out
+    of the normal build with one warning line, so one unfinished edition never fails the whole site."""
     root = Path(root)
     site = origin(root)
     posts = journal_md.load_posts(str(root))
     files, entries = {}, []
     by_lang = {lang: [] for lang in journal_md.LANGS}
+    warn = warn or (lambda msg: print(msg, file=sys.stderr))
     for slug, langs in posts.items():
         # Archived articles predate the 12-edition policy.
         legacy = slug in LEGACY_POSTS
@@ -235,9 +238,8 @@ def build(root, preview=False):
             try:
                 journal_md.validate_editions(langs)
             except ValueError as exc:
-                if all(not meta.get("copy_review") for meta, _ in langs.values()):
-                    continue
-                raise ValueError(f"{slug}: {exc}") from exc
+                warn(f"journal: skipped {slug} (not ready to publish: {exc})")
+                continue
         paths = {lang: post_path(lang, slug) for lang in langs}
         for lang, (meta, body) in langs.items():
             for k in ("title", "date", "description"):

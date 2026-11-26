@@ -198,6 +198,9 @@ def check_hreflang(root, origin, pages, langs, errs):
         codes = [h for h, _ in alts]
         if "x-default" not in codes:
             errs.append("%s: hreflang x-default missing" % page)
+        dupes = sorted({c for c in codes if codes.count(c) > 1})
+        if dupes:
+            errs.append("%s: hreflang %s listed more than once" % (page, dupes))
         got = set(codes) - {"x-default"}
         parts = Path(page).parts
         if is_journal(page):
@@ -216,10 +219,14 @@ def check_hreflang(root, origin, pages, langs, errs):
                 errs.append("%s: hreflang %s href not a site URL: %s" % (page, code, href))
                 continue
             if is_journal(page):
-                # journal: en -> journal/…, ko -> ko/journal/… (x-default = en)
-                want_prefix = {"en": "journal/", "ko": "ko/journal/", "x-default": "journal/"}.get(code)
-                if want_prefix and not f.startswith(want_prefix):
-                    errs.append("%s: hreflang %s points to %s (expected %s…)" % (page, code, href, want_prefix))
+                # journal: every code points at the same article in its own language
+                # (en -> journal/…, ko -> ko/journal/…), x-default at the English one.
+                target = want.get("en" if code == "x-default" else code)
+                if target is not None and f != target.as_posix():
+                    errs.append("%s: hreflang %s points to %s (expected %s)"
+                                % (page, code, href, target.as_posix()))
+                elif code == "x-default" and target is None:
+                    errs.append("%s: hreflang x-default without an English edition" % page)
             elif code in expected and not f.startswith(expected[code] + "/"):
                 errs.append("%s: hreflang %s points to %s (expected folder %s)"
                             % (page, code, href, expected[code]))
