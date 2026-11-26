@@ -1,4 +1,6 @@
 """publish_next helpers: queue order, date/time stamping, 12 editions. No git, no network."""
+from contextlib import redirect_stderr, redirect_stdout
+import io
 import os
 import subprocess
 import sys
@@ -34,7 +36,10 @@ class QueueTest(unittest.TestCase):
             os.makedirs(os.path.join(self.q, name))
 
     def test_front_of_queue_is_lowest_number(self):
+        os.makedirs(os.path.join(self.q, "100-later"))
+        os.makedirs(os.path.join(self.q, "9-next"))
         self.assertEqual(publish_next.next_folder(self.q), "01-a")
+        self.assertEqual(publish_next.queue_folders(self.q), ["01-a", "02-b", "9-next", "100-later"])
 
     def test_empty_queue_returns_none(self):
         empty = tempfile.mkdtemp()
@@ -51,6 +56,14 @@ class QueueTest(unittest.TestCase):
         Path(folder, "en.md").write_text(SAMPLE.replace("copy_review: iris", "copy_review: pending"), encoding="utf-8")
         with self.assertRaisesRegex(ValueError, "Iris"):
             publish_next.editions(folder)
+
+    def test_queue_check_reports_an_unreviewed_batch_without_consuming_it(self):
+        stdout, stderr = io.StringIO(), io.StringIO()
+        with redirect_stdout(stdout), redirect_stderr(stderr):
+            self.assertEqual(publish_next.check_queue(self.q), 5)
+        self.assertIn("01-a: 발행 준비 미완료", stderr.getvalue())
+        self.assertIn("02-b: 발행 준비 미완료", stderr.getvalue())
+        self.assertEqual(publish_next.queue_folders(self.q), ["01-a", "02-b"])
 
 
 def git(cwd, *args):
@@ -100,7 +113,10 @@ class PublishFlowTest(unittest.TestCase):
 
     def test_publish_commits_only_journal_files_and_moves_queue_without_push(self):
         before = git(self.origin, "rev-parse", "main")
-        self.assertEqual(self.run_publish(pull=False), 0)
+        stderr = io.StringIO()
+        with redirect_stderr(stderr):
+            self.assertEqual(self.run_publish(pull=False), 0)
+        self.assertIn("STOCK_ALERT: 발행 후 예약 원고 0편", stderr.getvalue())
         self.assertEqual(git(self.repo, "rev-list", "--count", "origin/main..HEAD"), "1")
         self.assertEqual(git(self.origin, "rev-parse", "main"), before)  # push 꺼짐
         files = git(self.repo, "show", "--name-only", "--format=", "HEAD").split("\n")

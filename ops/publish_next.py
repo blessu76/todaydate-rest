@@ -8,6 +8,7 @@
 push 가 실패해도 발행은 성공으로 본다(커밋은 클론에 남아 다음 성공 push 때 같이 올라간다).
 옵션: --dry-run 은 복사·빌드·검사까지만 하고 커밋·push·큐 이동을 하지 않으며, 만든 파일은 되돌린다.
      --no-pull 은 pull --rebase 를 건너뛴다(오프라인 시험용).
+     --check-queue 는 큐의 12개 언어판과 검수 상태를 읽기 전용으로 확인한다.
 환경: TODAYDATE_REPO (기본 ~/Developer/datepick-rest) · TODAYDATE_PUSH=1 (기본 꺼짐)
 종료 코드: 0 발행(또는 dry-run 통과) · 3 큐 비었음(STOCK_ALERT) · 4 main 아님/작업 트리 더러움 · 5 빌드·검사·커밋 실패.
 """
@@ -29,9 +30,15 @@ JOURNAL_PATHS = ("journal", *(f"{lang.lower()}/journal" for lang in journal_md.L
 ADD_PATHS = ("content/journal", *JOURNAL_PATHS, "sitemap.xml")
 
 
+def queue_folders(queue):
+    return sorted((name for name in os.listdir(queue)
+                   if re.fullmatch(r"[0-9]+-[a-z0-9]+(?:-[a-z0-9]+)*", name)
+                   and os.path.isdir(os.path.join(queue, name))),
+                  key=lambda name: (int(name.split("-", 1)[0]), name))
+
+
 def next_folder(queue):
-    names = sorted(n for n in os.listdir(queue)
-                   if re.match(r"\d+-", n) and os.path.isdir(os.path.join(queue, n)))
+    names = queue_folders(queue)
     return names[0] if names else None
 
 
@@ -59,6 +66,26 @@ def editions(folder):
             out.append((lang, f.read()))
     journal_md.validate_editions({lang: journal_md.parse(text) for lang, text in out})
     return out
+
+
+def check_queue(queue):
+    """발행 전에 원고별 언어판과 검수 상태를 확인한다. 파일은 건드리지 않는다."""
+    names = queue_folders(queue)
+    if not names:
+        print("STOCK_ALERT: todaydate 저널 큐가 비었다", file=sys.stderr)
+        return 3
+    invalid = False
+    for name in names:
+        try:
+            editions(os.path.join(queue, name))
+        except (OSError, ValueError) as exc:
+            invalid = True
+            print(f"{name}: 발행 준비 미완료 — {exc}", file=sys.stderr)
+        else:
+            print(f"{name}: 언어판 {len(journal_md.LANGS)}개와 검수 표기 확인")
+    if len(names) <= 1:
+        print(f"STOCK_ALERT: 예약 원고 {len(names)}편 — 다음 발행분 보충 필요", file=sys.stderr)
+    return 5 if invalid else 0
 
 
 def sh(*cmd, cwd=None):
@@ -150,17 +177,25 @@ def publish(queue, date, hhmm, dry_run=False, pull=True):
     os.makedirs(done, exist_ok=True)
     shutil.move(os.path.join(queue, name), os.path.join(done, name))
     print(f"published {slug} {date} {hhmm} KST")
+    remaining = len(queue_folders(queue))
+    if remaining <= 1:
+        print(f"STOCK_ALERT: 발행 후 예약 원고 {remaining}편 — 큐 보충 필요", file=sys.stderr)
     return 0
 
 
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
-    ap.add_argument("--date", required=True)
-    ap.add_argument("--time", required=True)
+    ap.add_argument("--date")
+    ap.add_argument("--time")
     ap.add_argument("--queue", required=True)
+    ap.add_argument("--check-queue", action="store_true", help="원고와 검수 상태만 확인")
     ap.add_argument("--dry-run", action="store_true", help="복사·빌드·검사까지만; 커밋·push·큐 이동 없음")
     ap.add_argument("--no-pull", action="store_true", help="pull --rebase 를 건너뛴다")
     a = ap.parse_args(argv)
+    if a.check_queue:
+        return check_queue(a.queue)
+    if not a.date or not a.time:
+        ap.error("--date와 --time이 필요합니다")
     return publish(a.queue, a.date, a.time, dry_run=a.dry_run, pull=not a.no_pull)
 
 
