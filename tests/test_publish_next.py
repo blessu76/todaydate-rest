@@ -2,6 +2,7 @@
 from contextlib import redirect_stderr, redirect_stdout
 import io
 import os
+import shutil
 import subprocess
 import sys
 import tempfile
@@ -28,6 +29,12 @@ class StampTest(unittest.TestCase):
         self.assertEqual(sum(line.startswith("date:") for line in out.splitlines()), 1)
         self.assertNotIn("2000-01-01", out)
         self.assertIn('time: "14:05"', out)
+
+    def test_stamps_title_and_replaces_date_with_front_matter_spacing(self):
+        text = SAMPLE.replace("title: T\n", '  title : T\n date : 2000-01-01\n time : "01:01"\n')
+        out = publish_next.stamp(text, "2026-11-21", "14:05")
+        self.assertIn('  title : T\ndate: 2026-11-21\ntime: "14:05"', out)
+        self.assertNotIn("2000-01-01", out)
 
 
 class QueueTest(unittest.TestCase):
@@ -96,15 +103,19 @@ class PublishFlowTest(unittest.TestCase):
         git(self.repo, "commit", "-qm", "base")
         git(self.repo, "push", "-q", "origin", "main")
         self.queue = root / "queue"
-        folder = self.queue / "01-hello"
-        folder.mkdir(parents=True)
-        for lang in publish_next.journal_md.LANGS:
-            (folder / f"{lang}.md").write_text(SAMPLE.replace("lang: en", f"lang: {lang}"), encoding="utf-8")
+        self.add_draft("01-hello")
         self._old = publish_next.REPO
         publish_next.REPO = str(self.repo)
         self.addCleanup(setattr, publish_next, "REPO", self._old)
         self._env = os.environ.pop("TODAYDATE_PUSH", None)
         self.addCleanup(lambda: os.environ.__setitem__("TODAYDATE_PUSH", self._env) if self._env else None)
+
+    def add_draft(self, name, vietnamese=SAMPLE):
+        folder = self.queue / name
+        folder.mkdir(parents=True)
+        for lang in publish_next.journal_md.LANGS:
+            text = vietnamese if lang == "vi" else SAMPLE
+            (folder / f"{lang}.md").write_text(text.replace("lang: en", f"lang: {lang}"), encoding="utf-8")
 
     def run_publish(self, **kw):
         return publish_next.publish(str(self.queue), "2026-11-21", "14:30", **kw)
@@ -152,6 +163,58 @@ class PublishFlowTest(unittest.TestCase):
         self.assertFalse((self.repo / "content/journal/draft").exists())
         self.assertFalse((self.repo / "content/journal/missing").exists())
         self.assertEqual(self.clean(), "")
+
+    def test_queue_check_reports_missing_title_and_blank_description(self):
+        self.add_draft("02-no-title", SAMPLE.replace("title: T\n", ""))
+        self.add_draft("03-no-description", SAMPLE.replace("description: D", 'description: ""'))
+        out, err = io.StringIO(), io.StringIO()
+        with redirect_stdout(out), redirect_stderr(err):
+            code = publish_next.main(["--check-queue", "--queue", str(self.queue)])
+        self.assertEqual(code, 5)
+        self.assertIn("01-hello", out.getvalue())
+        self.assertRegex(err.getvalue(), r"02-no-title[^\n]*vi\.md[^\n]*'title'")
+        self.assertRegex(err.getvalue(), r"03-no-description[^\n]*vi\.md[^\n]*'description'")
+        self.assertEqual(publish_next.queue_folders(self.queue), ["01-hello", "02-no-title", "03-no-description"])
+
+    def test_publish_skips_incomplete_front_matter_and_builds_next_draft(self):
+        (self.queue / "01-hello").rename(self.queue / "03-hello")
+        self.add_draft("01-no-description", SAMPLE.replace("description: D\n", ""))
+        self.add_draft("02-no-title", SAMPLE.replace("title: T\n", ""))
+        for filename in ("build_journal.py", "journal_md.py"):
+            shutil.copyfile(ROOT / "scripts" / filename, self.repo / "scripts" / filename)
+        (self.repo / "CNAME").write_text("example.test\n", encoding="utf-8")
+        (self.repo / "sitemap.xml").write_text(
+            "<urlset>\n  <url>\n    <loc>https://example.test/</loc>\n  </url>\n</urlset>\n", encoding="utf-8")
+        git(self.repo, "add", "scripts", "CNAME", "sitemap.xml")
+        git(self.repo, "commit", "-qm", "use journal builder")
+        err = io.StringIO()
+        with redirect_stderr(err):
+            code = self.run_publish(pull=False)
+        self.assertEqual(code, 0, err.getvalue())
+        self.assertRegex(err.getvalue(), r"01-no-description[^\n]*vi\.md[^\n]*'description'")
+        self.assertRegex(err.getvalue(), r"02-no-title[^\n]*vi\.md[^\n]*'title'")
+        self.assertEqual(publish_next.queue_folders(self.queue), ["01-no-description", "02-no-title"])
+        self.assertTrue((self.queue / ".published/03-hello").is_dir())
+        self.assertTrue((self.repo / "vi/journal/hello/index.html").is_file())
+        self.assertEqual(self.clean(), "")
+
+    def test_queue_check_stock_alert_counts_only_ready_drafts(self):
+        self.add_draft("02-review-pending", SAMPLE.replace("copy_review: iris", "copy_review: pending"))
+        self.add_draft("03-review-pending", SAMPLE.replace("copy_review: iris", "copy_review: pending"))
+        err = io.StringIO()
+        with redirect_stdout(io.StringIO()), redirect_stderr(err):
+            self.assertEqual(publish_next.check_queue(str(self.queue)), 5)
+        self.assertIn("STOCK_ALERT: 예약 원고 1편", err.getvalue())
+
+    def test_publish_stock_alert_counts_only_remaining_ready_drafts(self):
+        self.add_draft("02-review-pending", SAMPLE.replace("copy_review: iris", "copy_review: pending"))
+        self.add_draft("03-remaining-ready")
+        self.add_draft("04-review-pending", SAMPLE.replace("copy_review: iris", "copy_review: pending"))
+        err = io.StringIO()
+        with redirect_stderr(err):
+            self.assertEqual(self.run_publish(pull=False), 0)
+        self.assertIn("STOCK_ALERT: 발행 후 예약 원고 1편", err.getvalue())
+        self.assertEqual(publish_next.queue_folders(self.queue), ["02-review-pending", "03-remaining-ready", "04-review-pending"])
 
     def test_dirty_tree_exits_4(self):
         (self.repo / "stray.txt").write_text("x")

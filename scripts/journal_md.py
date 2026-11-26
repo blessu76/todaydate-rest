@@ -12,6 +12,15 @@ LANGS = ("en", "ko", "ja", "zh-Hant", "es", "pt-BR", "fr", "de", "id", "th", "vi
 LEGACY_LANGS = ("en", "ko")
 
 
+def validate_required_front_matter(meta, source, *, require_date=True):
+    """Require the metadata used to build a page. Queued drafts get their date at publication."""
+    for key in ("title", "date", "description"):
+        if key == "date" and not require_date:
+            continue
+        if not meta.get(key):
+            raise ValueError(f"{source}: front matter '{key}' missing")
+
+
 def validate_editions(editions):
     missing = set(LANGS) - editions.keys()
     if missing:

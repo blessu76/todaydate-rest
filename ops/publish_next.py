@@ -8,7 +8,7 @@
 push 가 실패해도 발행은 성공으로 본다(커밋은 클론에 남아 다음 성공 push 때 같이 올라간다).
 옵션: --dry-run 은 복사·빌드·검사까지만 하고 커밋·push·큐 이동을 하지 않으며, 만든 파일은 되돌린다.
      --no-pull 은 pull --rebase 를 건너뛴다(오프라인 시험용).
-     --check-queue 는 큐의 12개 언어판과 검수 상태를 읽기 전용으로 확인한다.
+     --check-queue 는 큐의 12개 언어판, 검수 상태, 필수 front matter 를 읽기 전용으로 확인한다.
 환경: TODAYDATE_REPO (기본 ~/Developer/datepick-rest) · TODAYDATE_PUSH=1 (기본 꺼짐)
 종료 코드: 0 발행(또는 dry-run 통과) · 3 준비된 원고 없음(STOCK_ALERT) · 4 main 아님/작업 트리 더러움 · 5 빌드·검사·커밋 실패.
 """
@@ -47,16 +47,17 @@ def stamp(text, date, hhmm):
     head, sep, rest = text.partition("\n---\n")
     out = []
     for line in head.split("\n"):
-        if line.startswith(("date:", "time:")):
+        key = line.partition(":")[0].strip()
+        if key in ("date", "time"):
             continue
         out.append(line)
-        if line.startswith("title:"):
+        if key == "title":
             out += [f"date: {date}", f'time: "{hhmm}"']
     return "\n".join(out) + sep + rest
 
 
 def editions(folder):
-    """발행할 언어판 [(lang, text)] — 12개 언어판과 Iris 검수가 있어야 한다."""
+    """필수 메타데이터와 Iris 검수를 갖춘 12개 언어판 [(lang, text)]을 읽는다."""
     out = []
     for lang in journal_md.LANGS:
         path = os.path.join(folder, lang + ".md")
@@ -64,28 +65,40 @@ def editions(folder):
             raise FileNotFoundError(f"{lang}.md 가 없다")
         with open(path, encoding="utf-8") as f:
             out.append((lang, f.read()))
-    journal_md.validate_editions({lang: journal_md.parse(text) for lang, text in out})
+    parsed = {lang: journal_md.parse(text) for lang, text in out}
+    journal_md.validate_editions(parsed)
+    for lang, (meta, _) in parsed.items():
+        journal_md.validate_required_front_matter(meta, f"{lang}.md", require_date=False)
     return out
 
 
+def inspect_queue(queue, names):
+    """원고별로 발행할 언어판 또는 준비되지 않은 사유를 돌려준다."""
+    for name in names:
+        try:
+            ready_editions = editions(os.path.join(queue, name))
+        except (OSError, ValueError) as exc:
+            yield name, None, exc
+        else:
+            yield name, ready_editions, None
+
+
 def check_queue(queue):
-    """발행 전에 원고별 언어판과 검수 상태를 확인한다. 파일은 건드리지 않는다."""
+    """원고별 발행 준비 상태를 읽기 전용으로 확인한다."""
     names = queue_folders(queue)
     if not names:
         print("STOCK_ALERT: todaydate 저널 큐가 비었다", file=sys.stderr)
         return 3
-    invalid = False
-    for name in names:
-        try:
-            editions(os.path.join(queue, name))
-        except (OSError, ValueError) as exc:
-            invalid = True
-            print(f"{name}: 발행 준비 미완료 — {exc}", file=sys.stderr)
+    ready = 0
+    for name, ready_editions, error in inspect_queue(queue, names):
+        if error is not None:
+            print(f"{name}: 발행 준비 미완료 — {error}", file=sys.stderr)
         else:
-            print(f"{name}: 언어판 {len(journal_md.LANGS)}개와 검수 표기 확인")
-    if len(names) <= 1:
-        print(f"STOCK_ALERT: 예약 원고 {len(names)}편 — 다음 발행분 보충 필요", file=sys.stderr)
-    return 5 if invalid else 0
+            ready += 1
+            print(f"{name}: 언어판 {len(ready_editions)}개, 검수 표기 및 필수 front matter 확인")
+    if ready <= 1:
+        print(f"STOCK_ALERT: 예약 원고 {ready}편 — 다음 발행분 보충 필요", file=sys.stderr)
+    return 5 if ready < len(names) else 0
 
 
 def sh(*cmd, cwd=None):
@@ -141,13 +154,10 @@ def publish(queue, date, hhmm, dry_run=False, pull=True):
     if not names:
         print("STOCK_ALERT: todaydate 저널 큐가 비었다", file=sys.stderr)
         return 3
-    for name in names:
-        try:
-            ready_editions = editions(os.path.join(queue, name))
-        except (OSError, ValueError) as exc:
-            print(f"STOCK_ALERT: {name}: 발행 준비 미완료 — {exc}", file=sys.stderr)
-        else:
+    for name, ready_editions, error in inspect_queue(queue, names):
+        if error is None:
             break
+        print(f"STOCK_ALERT: {name}: 발행 준비 미완료 — {error}", file=sys.stderr)
     else:
         print("STOCK_ALERT: todaydate 저널 큐에 발행 준비가 끝난 원고가 없다", file=sys.stderr)
         return 3
@@ -190,7 +200,7 @@ def publish(queue, date, hhmm, dry_run=False, pull=True):
     os.makedirs(done, exist_ok=True)
     shutil.move(os.path.join(queue, name), os.path.join(done, name))
     print(f"published {slug} {date} {hhmm} KST")
-    remaining = len(queue_folders(queue))
+    remaining = sum(error is None for _, _, error in inspect_queue(queue, queue_folders(queue)))
     if remaining <= 1:
         print(f"STOCK_ALERT: 발행 후 예약 원고 {remaining}편 — 큐 보충 필요", file=sys.stderr)
     return 0
@@ -201,7 +211,7 @@ def main(argv=None):
     ap.add_argument("--date")
     ap.add_argument("--time")
     ap.add_argument("--queue", required=True)
-    ap.add_argument("--check-queue", action="store_true", help="원고와 검수 상태만 확인")
+    ap.add_argument("--check-queue", action="store_true", help="원고별 발행 준비 상태 확인")
     ap.add_argument("--dry-run", action="store_true", help="복사·빌드·검사까지만; 커밋·push·큐 이동 없음")
     ap.add_argument("--no-pull", action="store_true", help="pull --rebase 를 건너뛴다")
     a = ap.parse_args(argv)

@@ -244,9 +244,7 @@ def build(root, preview=False, warn=None):
                 continue
         paths = {lang: post_path(lang, slug) for lang in langs}
         for lang, (meta, body) in langs.items():
-            for k in ("title", "date", "description"):
-                if not meta.get(k):
-                    raise ValueError("content/journal/%s/%s.md: front matter '%s' missing" % (slug, lang, k))
+            journal_md.validate_required_front_matter(meta, f"content/journal/{slug}/{lang}.md")
             files[file_of(paths[lang])] = render_post(lang, slug, meta, body, paths, site)
             by_lang[lang].append((slug, meta))
             entries.append((site + paths[lang], meta["date"], lang, slug))
