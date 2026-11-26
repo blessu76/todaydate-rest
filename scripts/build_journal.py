@@ -223,8 +223,8 @@ def sort_key(item):
 def build(root, preview=False, warn=None):
     """Return (files {repo-relative path: html}, entries [(loc, lastmod, lang, slug)]).
     Each list page is one entry (slug None); lastmod is the newest post's date.
-    A non-legacy article that is not ready (an edition or its Iris copy review missing) is left out
-    of the normal build with one warning line, so one unfinished edition never fails the whole site."""
+    Skip unfinished drafts with a warning. If an unfinished article already has a published
+    page, fail before the caller can change the generated output."""
     root = Path(root)
     site = origin(root)
     posts = journal_md.load_posts(str(root))
@@ -238,6 +238,8 @@ def build(root, preview=False, warn=None):
             try:
                 journal_md.validate_editions(langs)
             except ValueError as exc:
+                if any((root / file_of(post_path(lang, slug))).is_file() for lang in journal_md.LANGS):
+                    raise ValueError(f"{slug} already has published pages: {exc}") from exc
                 warn(f"journal: skipped {slug} (not ready to publish: {exc})")
                 continue
         paths = {lang: post_path(lang, slug) for lang in langs}
@@ -304,7 +306,11 @@ def main(argv=None):
     if not site:
         print("CNAME missing: site origin unknown")
         return 1
-    files, entries = build(root, preview=a.preview)
+    try:
+        files, entries = build(root, preview=a.preview)
+    except ValueError as exc:
+        print(f"journal: {exc}", file=sys.stderr)
+        return 1
     sm = sitemap_text(root, entries, site)
     if a.check:
         stale = [rel for rel, text in files.items()

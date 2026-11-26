@@ -7,6 +7,7 @@ import sys
 import tempfile
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "ops"))
@@ -125,6 +126,33 @@ class PublishFlowTest(unittest.TestCase):
         self.assertTrue((self.queue / ".published" / "01-hello").is_dir())
         self.assertFalse((self.queue / "01-hello").exists())
 
+    def test_publish_skips_unreviewed_and_missing_editions_then_publishes_next(self):
+        missing = self.queue / "02-missing"
+        missing.mkdir()
+        draft = self.queue / "01-draft"
+        draft.mkdir()
+        for source in (self.queue / "01-hello").glob("*.md"):
+            text = source.read_text(encoding="utf-8")
+            if source.name == "vi.md":
+                text = text.replace("copy_review: iris\n", "")
+            (draft / source.name).write_text(text, encoding="utf-8")
+        (self.queue / "01-hello").rename(self.queue / "03-hello")
+
+        err = io.StringIO()
+        with redirect_stderr(err):
+            self.assertEqual(self.run_publish(pull=False), 0)
+        self.assertRegex(err.getvalue(), r"01-draft[^\n]*\bvi\b[^\n]*Iris")
+        self.assertRegex(err.getvalue(), r"02-missing[^\n]*en\.md")
+        self.assertEqual(err.getvalue().count("01-draft"), 1)
+        self.assertEqual(err.getvalue().count("02-missing"), 1)
+        self.assertTrue(draft.is_dir())
+        self.assertTrue(missing.is_dir())
+        self.assertTrue((self.queue / ".published/03-hello").is_dir())
+        self.assertIn("content/journal/hello/en.md", git(self.repo, "show", "--name-only", "--format=", "HEAD"))
+        self.assertFalse((self.repo / "content/journal/draft").exists())
+        self.assertFalse((self.repo / "content/journal/missing").exists())
+        self.assertEqual(self.clean(), "")
+
     def test_dirty_tree_exits_4(self):
         (self.repo / "stray.txt").write_text("x")
         self.assertEqual(self.run_publish(pull=False), 4)
@@ -148,11 +176,34 @@ class PublishFlowTest(unittest.TestCase):
         self.assertFalse((self.repo / "content" / "journal" / "hello").exists())
         self.assertTrue((self.queue / "01-hello").is_dir())
 
-    def test_unexpected_exception_reverts(self):
+    def test_no_ready_editions_finishes_without_running_git(self):
         (self.queue / "01-hello" / "ko.md").write_bytes(b"\xff\xfe\x00bad")  # UnicodeDecodeError
-        self.assertEqual(self.run_publish(pull=False), 5)
+        err = io.StringIO()
+        with patch.object(publish_next, "sh") as sh, patch.object(publish_next, "pull_rebase") as pull:
+            with redirect_stderr(err):
+                self.assertEqual(self.run_publish(), 3)
+            sh.assert_not_called()
+            pull.assert_not_called()
+        self.assertIn("01-hello: 발행 준비 미완료", err.getvalue())
+        self.assertIn("STOCK_ALERT", err.getvalue())
         self.assertEqual(self.clean(), "")
         self.assertFalse((self.repo / "content" / "journal" / "hello").exists())
+        self.assertTrue((self.queue / "01-hello").is_dir())
+
+    def test_child_stderr_reaches_publisher_log_on_success_and_failure(self):
+        (self.repo / "scripts" / "build_journal.py").write_text(
+            "import sys\nprint('build warning', file=sys.stderr)\n", encoding="utf-8")
+        (self.repo / "scripts" / "check.sh").write_text(
+            "#!/bin/bash\necho 'check failure' >&2\nexit 1\n", encoding="utf-8")
+        git(self.repo, "commit", "-qam", "emit diagnostics")
+        result = subprocess.run(
+            [sys.executable, str(ROOT / "ops/publish_next.py"), "--queue", str(self.queue),
+             "--date", "2026-11-21", "--time", "14:30", "--no-pull"],
+            env={**os.environ, "TODAYDATE_REPO": str(self.repo)}, capture_output=True, text=True, timeout=30)
+        self.assertEqual(result.returncode, 5)
+        self.assertIn("build warning", result.stderr)
+        self.assertEqual(result.stderr.count("check failure"), 1)
+        self.assertEqual(self.clean(), "")
 
     def test_pull_conflict_aborts_rebase_and_leaves_clean_clone(self):
         other = Path(self.tmp.name) / "other"

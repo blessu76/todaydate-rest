@@ -34,8 +34,10 @@ def write_edition(root, slug, lang, date="2026-11-26", time="12:00", reviewed=Tr
         f'{review}description: Desc {slug}\n---\n\n## Part\n\nBody text.\n', encoding="utf-8")
 
 
-def site_root():
-    root = Path(tempfile.mkdtemp())
+def site_root(test):
+    tmp = tempfile.TemporaryDirectory()
+    test.addCleanup(tmp.cleanup)
+    root = Path(tmp.name)
     (root / "CNAME").write_text("example.test\n", encoding="utf-8")
     (root / "sitemap.xml").write_text(SITEMAP, encoding="utf-8")
     return root
@@ -45,7 +47,7 @@ class PartialReviewTest(unittest.TestCase):
     """W1: one unfinished edition must not fail the whole site; that article is skipped with a warning."""
 
     def setUp(self):
-        self.root = site_root()
+        self.root = site_root(self)
         for lang in journal_md.LANGS:
             write_edition(self.root, "ready", lang)
         # Iris reviewed only some editions of "partial".
@@ -79,6 +81,33 @@ class PartialReviewTest(unittest.TestCase):
         self.assertTrue((self.root / "journal/ready/index.html").is_file())
         self.assertFalse((self.root / "journal/partial").exists())
 
+    def test_revoked_review_fails_build_and_check_without_changing_published_output(self):
+        args = ["--root", str(self.root)]
+        with redirect_stdout(io.StringIO()), redirect_stderr(io.StringIO()):
+            self.assertEqual(build_journal.main(args), 0)
+        pages = [page for base in build_journal.journal_paths()
+                 for page in (self.root / base).rglob("index.html")]
+        self.assertEqual(len(pages), 2 * len(journal_md.LANGS))
+        published = {path: path.read_bytes() for path in (*pages, self.root / "sitemap.xml")}
+        write_edition(self.root, "ready", "vi", reviewed=False)
+
+        for mode in ("check", "build"):
+            with self.subTest(mode=mode):
+                err = io.StringIO()
+                options = ["--check"] if mode == "check" else []
+                with redirect_stdout(io.StringIO()), redirect_stderr(err):
+                    code = build_journal.main(args + options)
+                self.assertEqual(code, 1)
+                self.assertRegex(err.getvalue(), r"ready[^\n]*\bvi\b[^\n]*Iris copy review")
+                self.assertEqual({path: path.read_bytes() for path in published}, published)
+
+    def test_existing_non_english_page_blocks_skipping_incomplete_editions(self):
+        page = self.root / "ja/journal/gap/index.html"
+        page.parent.mkdir(parents=True)
+        page.write_text("published edition", encoding="utf-8")
+        with self.assertRaisesRegex(ValueError, r"gap[^\n]*missing journal editions: tr"):
+            build_journal.build(self.root)
+
     def test_preview_still_renders_unready_articles(self):
         files, _ = build_journal.build(self.root, preview=True, warn=self.fail)
         self.assertIn("journal/partial/index.html", files)
@@ -89,7 +118,7 @@ class OrderingTest(unittest.TestCase):
     """W2: list order is (date, time, slug) newest first; queue order is (number, name)."""
 
     def test_same_date_and_time_breaks_ties_by_slug(self):
-        root = site_root()
+        root = site_root(self)
         for slug in ("bbb", "aaa", "ccc"):
             for lang in journal_md.LANGS:
                 write_edition(root, slug, lang, title=f"T-{slug}")
@@ -101,7 +130,7 @@ class OrderingTest(unittest.TestCase):
         self.assertEqual(build_journal.build(root)[0]["journal/index.html"], first)
 
     def test_load_posts_is_sorted_by_slug(self):
-        root = site_root()
+        root = site_root(self)
         for slug in ("zeta", "alpha", "mid"):
             write_edition(root, slug, "en")
         self.assertEqual(list(journal_md.load_posts(str(root))), ["alpha", "mid", "zeta"])
@@ -248,7 +277,7 @@ class JournalHreflangTest(unittest.TestCase):
     """W5/W6: each journal alternate points at the same article in its own language; x-default at English."""
 
     def setUp(self):
-        self.root = site_root()
+        self.root = site_root(self)
         for lang in journal_md.LANGS:
             write_edition(self.root, "ready", lang)
         files, _ = build_journal.build(self.root)
