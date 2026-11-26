@@ -83,7 +83,7 @@ class BuildTest(unittest.TestCase):
         self.root = root
 
     def test_build_pages_and_order(self):
-        files, entries = build_journal.build(self.root)
+        files, entries = build_journal.build(self.root, preview=True)
         self.assertIn("journal/index.html", files)
         self.assertIn("ko/journal/index.html", files)
         self.assertIn("journal/newer/index.html", files)
@@ -94,25 +94,44 @@ class BuildTest(unittest.TestCase):
         self.assertIn('hreflang="ko" href="https://example.test/ko/journal/"', en_list)
 
     def test_article_alternates_only_when_both_languages(self):
-        files, _ = build_journal.build(self.root)
+        files, _ = build_journal.build(self.root, preview=True)
         self.assertNotIn('hreflang="ko"', files["journal/newer/index.html"].split("</head>")[0])
         self.assertIn('hreflang="ko" href="https://example.test/ko/journal/older/"',
                       files["journal/older/index.html"].split("</head>")[0])
 
     def test_sitemap_replaces_only_journal_blocks(self):
-        files, entries = build_journal.build(self.root)
+        files, entries = build_journal.build(self.root, preview=True)
         sm = build_journal.sitemap_text(self.root, entries, "https://example.test")
         self.assertIn("<loc>https://example.test/</loc>", sm)  # non-journal kept
         self.assertNotIn("/journal/old/", sm)  # stale journal entry dropped
         self.assertIn("<loc>https://example.test/journal/newer/</loc>", sm)
         self.assertIn("<loc>https://example.test/ko/journal/older/</loc>", sm)
 
+    def test_unreviewed_drafts_render_only_in_preview(self):
+        files, _ = build_journal.build(self.root)
+        self.assertNotIn("journal/newer/index.html", files)
+        files, _ = build_journal.build(self.root, preview=True)
+        self.assertIn("journal/newer/index.html", files)
+
+    def test_reviewed_editions_get_reciprocal_language_links(self):
+        for lang in journal_md.LANGS:
+            write_post(self.root, "ready", lang, "Ready", "2026-11-26", "12:00")
+            source = self.root / "content" / "journal" / "ready" / f"{lang}.md"
+            source.write_text(source.read_text().replace(
+                "description:", "copy_review: iris\ncopy_review_date: 2026-11-26\ndescription:"))
+        files, entries = build_journal.build(self.root)
+        for lang in journal_md.LANGS:
+            page = files[build_journal.file_of(build_journal.post_path(lang, "ready"))]
+            self.assertIn(f'<html lang="{lang}"', page)
+            self.assertEqual(page.count('<link rel="alternate"'), len(journal_md.LANGS) + 1)
+        self.assertEqual(sum(slug == "ready" for _, _, _, slug in entries), len(journal_md.LANGS))
+
     def test_missing_front_matter_field_fails(self):
         d = self.root / "content" / "journal" / "bad"
         d.mkdir(parents=True)
         (d / "en.md").write_text("---\ntitle: X\ndate: 2026-11-20\n---\nbody\n", encoding="utf-8")
         with self.assertRaises(ValueError):
-            build_journal.build(self.root)
+            build_journal.build(self.root, preview=True)
 
 
 if __name__ == "__main__":

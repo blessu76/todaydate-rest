@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""큐(~/.ipe/queue/todaydate/NN-slug/{en,ko}.md)의 가장 앞 글 하나를 발행한다.
+"""큐(~/.ipe/queue/todaydate/NN-slug/<lang>.md)의 가장 앞 글 하나를 발행한다.
 
 순서: git pull --rebase → 가장 앞 글을 content/journal/<slug>/ 로 복사하며 date·time 을 지금으로 찍기
 → build_journal.py → scripts/check.sh (초록이어야 함) → git commit → (TODAYDATE_PUSH=1 일 때만) push
@@ -20,11 +20,13 @@ import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.abspath(os.environ.get("TODAYDATE_REPO") or os.path.expanduser("~/Developer/datepick-rest"))
-LANGS = ("en", "ko")
+sys.path.insert(0, os.path.join(os.path.dirname(HERE), "scripts"))
+import journal_md
 PUSH_TIMEOUT = 60  # 초. 네트워크가 멎어도 틱이 멈추지 않게 한다.
 PULL_TIMEOUT = 60
 # 발행이 만드는 경로만 add 한다(git add -A 금지).
-ADD_PATHS = ("content/journal", "journal", "ko/journal", "sitemap.xml")
+JOURNAL_PATHS = ("journal", *(f"{lang.lower()}/journal" for lang in journal_md.LANGS if lang != "en"))
+ADD_PATHS = ("content/journal", *JOURNAL_PATHS, "sitemap.xml")
 
 
 def next_folder(queue):
@@ -47,14 +49,15 @@ def stamp(text, date, hhmm):
 
 
 def editions(folder):
-    """발행할 언어판 [(lang, text)] — en·ko 둘 다 있어야 한다."""
+    """발행할 언어판 [(lang, text)] — 12개 언어판과 Iris 검수가 있어야 한다."""
     out = []
-    for lang in LANGS:
+    for lang in journal_md.LANGS:
         path = os.path.join(folder, lang + ".md")
         if not os.path.isfile(path):
             raise FileNotFoundError(f"{folder}: {lang}.md 가 없다")
         with open(path, encoding="utf-8") as f:
             out.append((lang, f.read()))
+    journal_md.validate_editions({lang: journal_md.parse(text) for lang, text in out})
     return out
 
 
@@ -98,7 +101,7 @@ def push():
 def _revert(created, dst):
     """이번에 만든 발행 흔적을 되돌린다 — 작업 트리는 pull 직후의 깨끗한 상태로."""
     sh("git", "reset", "--hard", "HEAD")
-    sh("git", "clean", "-fd", "--", "content/journal", "journal", "ko/journal")
+    sh("git", "clean", "-fd", "--", "content/journal", *JOURNAL_PATHS)
     if created and os.path.isdir(dst):
         shutil.rmtree(dst, ignore_errors=True)
 

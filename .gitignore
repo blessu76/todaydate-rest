@@ -1,2 +1,4 @@
 __pycache__/
 *.pyc
+
+/vendor/ipe_web_kit/

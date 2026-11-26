@@ -1,4 +1,4 @@
-"""publish_next helpers: queue order, date/time stamping, en+ko editions. No git, no network."""
+"""publish_next helpers: queue order, date/time stamping, 12 editions. No git, no network."""
 import os
 import subprocess
 import sys
@@ -10,7 +10,7 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "ops"))
 import publish_next  # noqa: E402
 
-SAMPLE = '---\ntitle: T\ndescription: D\nslug: s\nlang: en\n---\n\nBody\n'
+SAMPLE = '---\ntitle: T\ndescription: D\nslug: s\nlang: en\ncopy_review: iris\ncopy_review_date: 2026-11-26\n---\n\nBody\n'
 
 
 class StampTest(unittest.TestCase):
@@ -22,7 +22,7 @@ class StampTest(unittest.TestCase):
     def test_replaces_existing_date_and_time(self):
         text = SAMPLE.replace("title: T\n", 'title: T\ndate: 2000-01-01\ntime: "01:01"\n')
         out = publish_next.stamp(text, "2026-11-21", "14:05")
-        self.assertEqual(out.count("date:"), 1)
+        self.assertEqual(sum(line.startswith("date:") for line in out.splitlines()), 1)
         self.assertNotIn("2000-01-01", out)
         self.assertIn('time: "14:05"', out)
 
@@ -40,13 +40,17 @@ class QueueTest(unittest.TestCase):
         empty = tempfile.mkdtemp()
         self.assertIsNone(publish_next.next_folder(empty))
 
-    def test_editions_need_en_and_ko(self):
+    def test_editions_need_all_languages_and_copy_review(self):
         folder = os.path.join(self.q, "01-a")
         Path(folder, "en.md").write_text(SAMPLE, encoding="utf-8")
         with self.assertRaises(FileNotFoundError):
             publish_next.editions(folder)
-        Path(folder, "ko.md").write_text(SAMPLE.replace("lang: en", "lang: ko"), encoding="utf-8")
-        self.assertEqual([lang for lang, _ in publish_next.editions(folder)], ["en", "ko"])
+        for lang in publish_next.journal_md.LANGS:
+            Path(folder, f"{lang}.md").write_text(SAMPLE.replace("lang: en", f"lang: {lang}"), encoding="utf-8")
+        self.assertEqual([lang for lang, _ in publish_next.editions(folder)], list(publish_next.journal_md.LANGS))
+        Path(folder, "en.md").write_text(SAMPLE.replace("copy_review: iris", "copy_review: pending"), encoding="utf-8")
+        with self.assertRaisesRegex(ValueError, "Iris"):
+            publish_next.editions(folder)
 
 
 def git(cwd, *args):
@@ -80,7 +84,7 @@ class PublishFlowTest(unittest.TestCase):
         self.queue = root / "queue"
         folder = self.queue / "01-hello"
         folder.mkdir(parents=True)
-        for lang in ("en", "ko"):
+        for lang in publish_next.journal_md.LANGS:
             (folder / f"{lang}.md").write_text(SAMPLE.replace("lang: en", f"lang: {lang}"), encoding="utf-8")
         self._old = publish_next.REPO
         publish_next.REPO = str(self.repo)

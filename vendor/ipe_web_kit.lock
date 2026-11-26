@@ -1,0 +1,4 @@
+# Lock for the locally installed private ipe_web_kit. Only the lock is tracked.
+tag=v0.9.3
+commit=3bedbb9b7f3f312c9c696ab6f906c15f405d6954
+manifest_sha256=6e51ea6e6977560d57fabee2c8e9cbdbb335ef1d475b85967df10fd1e32631a7

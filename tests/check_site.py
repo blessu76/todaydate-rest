@@ -38,8 +38,6 @@ BCP47_TAG = {"zh-hans": "zh-Hans", "zh-hant": "zh-Hant", "pt-br": "pt-BR"}
 # and point readers to /en/.
 STANDARD_FOLDERS = ["en", "ko", "ja", "zh-hant", "es", "pt-br", "fr", "de", "id", "th", "vi", "tr"]
 ENDED_FOLDERS = {"zh-hans", "ar", "ru", "hi"}
-# Journal pages (journal/…, ko/journal/…) exist only in English and Korean (see scripts/build_journal.py).
-JOURNAL_TAGS = {"en", "ko"}
 
 
 def tag_for(folder):
@@ -50,7 +48,7 @@ def tag_for(folder):
 def is_journal(page):
     """'journal/x/index.html' or 'ko/journal/x/index.html' (any journal page, list or article)."""
     parts = Path(page).parts
-    return parts[:1] == ("journal",) or parts[:2] == ("ko", "journal")
+    return parts[:1] == ("journal",) or (len(parts) > 2 and parts[1] == "journal")
 
 
 class _Collect(HTMLParser):
@@ -201,8 +199,14 @@ def check_hreflang(root, origin, pages, langs, errs):
         if "x-default" not in codes:
             errs.append("%s: hreflang x-default missing" % page)
         got = set(codes) - {"x-default"}
-        # 저널(journal/, ko/journal/)은 영어·한국어 두 벌만 있다 — 나머지 언어는 번역 전까지 만들지 않는다.
-        want = {c: f for c, f in expected.items() if c in JOURNAL_TAGS} if is_journal(page) else expected
+        parts = Path(page).parts
+        if is_journal(page):
+            tail = parts[parts.index("journal"):]
+            candidates = {c: Path(*tail) if c == "en" else Path(folder, *tail)
+                          for c, folder in expected.items()}
+            want = {c: f for c, f in candidates.items() if (root / f).is_file()}
+        else:
+            want = expected
         if got != set(want):
             errs.append("%s: hreflang %s does not match language folders %s"
                         % (page, sorted(got), sorted(want)))

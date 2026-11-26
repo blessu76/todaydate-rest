@@ -2,11 +2,28 @@
 
 Subset: paragraphs, ## / ### headings, `- ` lists, `1. ` lists, **bold**, *italic*, `code`, [links](url).
 """
+from datetime import date
 import html
 import os
 import re
 
-LANGS = ("en", "ko")  # 저널 언어 — 본보기(duskblocks)와 같이 영어·한국어 두 벌 (번역본은 아직 없다)
+# ipe_web_kit v0.9.3 languages.SUPPORTED (BCP 47); URL folders are lowercase.
+LANGS = ("en", "ko", "ja", "zh-Hant", "es", "pt-BR", "fr", "de", "id", "th", "vi", "tr")
+LEGACY_LANGS = ("en", "ko")
+
+
+def validate_editions(editions):
+    missing = set(LANGS) - editions.keys()
+    if missing:
+        raise ValueError("missing journal editions: " + ", ".join(sorted(missing)))
+    for lang in LANGS:
+        meta, _ = editions[lang]
+        if meta.get("lang") != lang or meta.get("copy_review") != "iris":
+            raise ValueError(f"{lang}: language and Iris copy review are required")
+        try:
+            date.fromisoformat(meta.get("copy_review_date", ""))
+        except ValueError as exc:
+            raise ValueError(f"{lang}: copy_review_date must be a calendar date") from exc
 
 
 def parse(text):
