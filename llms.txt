@@ -1,20 +1,20 @@
 # 오늘 어때 (todaydate)
 
-> A daily date-scene game: pick the next moment and keep the stories as postcards. No ads and no account required. The core game is free; scene packs and decorations are optional, unlocked with points bought in the app. 12 languages.
+> A daily date-scene game: pick the next moment, collect the endings you reach, and share a result card from the ending screen. No ads and no account required. The core game is free; scene packs and decorations are optional, unlocked with points bought in the app. 12 languages.
 
 ## Pages
-- [한국어](https://todaydate.ipe.rest/ko/): 오늘의 데이트 장면에서 다음 순간을 고르고, 마음에 남은 이야기를 엽서로 모으세요.
-- [English](https://todaydate.ipe.rest/en/): Pick the next moment in a daily date scene, and keep the stories you like as postcards.
-- [日本語](https://todaydate.ipe.rest/ja/): 今日のデートの場面で次の瞬間を選び、心に残った物語をポストカードに集めましょう。
-- [繁體中文](https://todaydate.ipe.rest/zh-hant/): 在每日約會場景中選擇下一步，把留在心裡的故事收集成明信片。
-- [Español](https://todaydate.ipe.rest/es/): Elige el siguiente momento en una escena de cita diaria y guarda las historias que te importan como postales.
-- [Français](https://todaydate.ipe.rest/fr/): Choisissez la suite dans une scène de rendez-vous du quotidien et gardez les histoires qui vous touchent sous forme de cartes postales.
-- [Deutsch](https://todaydate.ipe.rest/de/): Wähle im Alltags-Date den nächsten Moment und sammle die Geschichten, die dir im Kopf bleiben, als Postkarten.
-- [Português (Brasil)](https://todaydate.ipe.rest/pt-br/): Escolha o próximo momento em uma cena de encontro do dia a dia e guarde as histórias que ficam com você como cartões-postais.
-- [Bahasa Indonesia](https://todaydate.ipe.rest/id/): Pilih momen berikutnya dalam adegan kencan sehari-hari, dan simpan cerita yang berkesan sebagai kartu pos.
-- [ไทย](https://todaydate.ipe.rest/th/): เลือกช่วงเวลาถัดไปในฉากเดทประจำวัน แล้วเก็บเรื่องราวที่ถูกใจไว้เป็นโปสการ์ด
-- [Tiếng Việt](https://todaydate.ipe.rest/vi/): Chọn khoảnh khắc tiếp theo trong một cảnh hẹn hò mỗi ngày, rồi giữ lại những câu chuyện bạn thích dưới dạng bưu thiếp.
-- [Türkçe](https://todaydate.ipe.rest/tr/): Günlük bir buluşma sahnesinde bir sonraki anı seç, beğendiğin hikâyeleri kartpostal olarak sakla.
+- [한국어](https://todaydate.ipe.rest/ko/): 오늘의 데이트 장면에서 다음 순간을 고르고, 엔딩을 모아 보세요.
+- [English](https://todaydate.ipe.rest/en/): Pick the next moment in a daily date scene, and collect the endings you reach.
+- [日本語](https://todaydate.ipe.rest/ja/): 今日のデートの場面で次の瞬間を選び、たどり着いたエンディングを集めましょう。
+- [繁體中文](https://todaydate.ipe.rest/zh-hant/): 在每日約會場景中選擇下一步，收集你達成的結局。
+- [Español](https://todaydate.ipe.rest/es/): Elige el siguiente momento en una escena de cita diaria y colecciona los finales que alcances.
+- [Français](https://todaydate.ipe.rest/fr/): Choisissez la suite dans une scène de rendez-vous du quotidien et collectionnez les fins que vous avez découvertes.
+- [Deutsch](https://todaydate.ipe.rest/de/): Wähle im Alltags-Date den nächsten Moment und sammle die Enden, die du erreichst.
+- [Português (Brasil)](https://todaydate.ipe.rest/pt-br/): Escolha o próximo momento em uma cena de encontro do dia a dia e colecione os finais que alcançar.
+- [Bahasa Indonesia](https://todaydate.ipe.rest/id/): Pilih momen berikutnya dalam adegan kencan sehari-hari dan kumpulkan ending yang kamu capai.
+- [ไทย](https://todaydate.ipe.rest/th/): เลือกช่วงเวลาถัดไปในฉากเดทประจำวัน แล้วสะสมตอนจบที่คุณได้พบ
+- [Tiếng Việt](https://todaydate.ipe.rest/vi/): Chọn khoảnh khắc tiếp theo trong một cảnh hẹn hò mỗi ngày và sưu tầm những kết thúc bạn tìm được.
+- [Türkçe](https://todaydate.ipe.rest/tr/): Günlük bir buluşma sahnesinde bir sonraki anı seç ve ulaştığın sonları biriktir.
 
 ## Policies (English)
 - [Privacy Policy](https://todaydate.ipe.rest/en/privacy/)
